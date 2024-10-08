@@ -211,3 +211,15 @@
 {"level":"error","message":"STATUS 400 : GET /products/0/100000/-1/s","timestamp":"2024-10-08T18:17:38.224Z"}
 {"level":"info","message":"GET /v1/products/0/s/1/100000","timestamp":"2024-10-08T18:18:08.373Z"}
 {"level":"info","message":"GET /products/0/s/1/100000","timestamp":"2024-10-08T18:18:08.376Z"}
+{"level":"info","message":"GET /v1/products/0/s/1/100000","timestamp":"2024-10-08T18:19:28.864Z"}
+{"level":"info","message":"GET /products/0/s/1/100000","timestamp":"2024-10-08T18:19:28.876Z"}
+{"level":"info","message":"GET /v1/products/0/100/1/100000","timestamp":"2024-10-08T18:19:34.583Z"}
+{"level":"info","message":"GET /products/0/100/1/100000","timestamp":"2024-10-08T18:19:34.587Z"}
+{"level":"info","message":"GET /v1/products/0/100/1/100000","timestamp":"2024-10-08T18:19:50.680Z"}
+{"level":"info","message":"GET /products/0/100/1/100000","timestamp":"2024-10-08T18:19:50.685Z"}
+{"level":"info","message":"GET /v1/products/0/100/1/-1","timestamp":"2024-10-08T18:20:00.401Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/100/1/-1","timestamp":"2024-10-08T18:20:00.404Z"}
+{"level":"info","message":"GET /v1/products/200/100/1/-1","timestamp":"2024-10-08T18:20:07.368Z"}
+{"level":"error","message":"STATUS 400 : GET /products/200/100/1/-1","timestamp":"2024-10-08T18:20:07.372Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:20:28.304Z"}
+{"level":"error","message":"STATUS 400 : POST /users/login","timestamp":"2024-10-08T18:20:28.339Z"}

@@ -35,3 +35,4 @@ npm install express-session
 UTILISER 
 npx ts-node-dev --ignore-watch data src/index.ts    
 POUR PARTIR LE PROJET
+

@@ -1,0 +1,25 @@
+Fait par Olivier Poirier
+2024-10-08
+
+PRÉPARATION DE L'APPLICATION
+1) Mettre le .env fourni sur léa à la racine du projet
+2) faire les installations plus bas 
+3) Prendre les tests de postman pour les requêtes
+4) Créér un environnement postman nommé "Token" qui prend une variable nommée "token"
+5) lancer le projet avec npx ts-node-dev --ignore-watch data src/index.ts    
+6) Pour voir swagger, allez sur https://localhost:3000/v1/api/
+7) Pour les autres routes et commandes de l'api, suivez le swagger et postman
+
+
+INSTALLATION:
+
+* VEUILLEZ FAIRE TOUTES LES COMMANDES SUIVANTES * :
+npm install node-fetch
+npm install jsonwebtoken
+npm install swagger-ui-express swagger-jsdoc
+npm install --save-dev @types/swagger-jsdoc
+npm install winston
+
+UTILISER 
+npx ts-node-dev --ignore-watch data src/index.ts    
+POUR PARTIR LE PROJET

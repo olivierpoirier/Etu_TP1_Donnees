@@ -2,6 +2,7 @@ Fait par Olivier Poirier
 2024-10-08
 
 PRÉPARATION DE L'APPLICATION
+0) Faites un git clone du projet : git clone https://github.com/olivierpoirier/Etu_TP1_Donnees.git
 1) Mettre le .env fourni sur léa à la racine du projet
 2) faire les installations plus bas 
 3) Prendre les tests de postman pour les requêtes

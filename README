@@ -15,13 +15,22 @@ PRÉPARATION DE L'APPLICATION
 INSTALLATION:
 
 * VEUILLEZ FAIRE TOUTES LES COMMANDES SUIVANTES * :
-npm install express
+npm install express fs https
 npm install typescript ts-node-dev @types/node @types/express --save-dev
 npm install node-fetch
+npm install node-rsa
+npm i --save-dev @types/node-rsa
+npm install express jsonwebtoken bcryptjs
+npm i --save-dev @types/jsonwebtoken @types/bcryptjs
 npm install jsonwebtoken
 npm install swagger-ui-express swagger-jsdoc
 npm install --save-dev @types/swagger-jsdoc
 npm install winston
+npm install crypto
+npm install bcryptjs
+npm install rxjs
+npm install dotenv
+npm install express-session
 
 UTILISER 
 npx ts-node-dev --ignore-watch data src/index.ts    

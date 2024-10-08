@@ -17,10 +17,16 @@ export class ProductController {
 
 
   public async getAllProducts(req: Request, res: Response): Promise<void> {
+
+
+    
     const minPrice = parseInt(req.params.minPrice) || 0;
     const maxPrice = parseInt(req.params.maxPrice) || 999999999999999;
     const minStock = parseInt(req.params.minStock) || 0;
     const maxStock = parseInt(req.params.maxStock) || 999999999999999;
+
+    console.log(minPrice)
+    console.log(maxPrice)
     if (
       minPrice >= 0
       && maxPrice >= 0

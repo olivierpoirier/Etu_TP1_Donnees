@@ -14,6 +14,8 @@ PRÉPARATION DE L'APPLICATION
 INSTALLATION:
 
 * VEUILLEZ FAIRE TOUTES LES COMMANDES SUIVANTES * :
+npm install express
+npm install typescript ts-node-dev @types/node @types/express --save-dev
 npm install node-fetch
 npm install jsonwebtoken
 npm install swagger-ui-express swagger-jsdoc
@@ -23,3 +25,7 @@ npm install winston
 UTILISER 
 npx ts-node-dev --ignore-watch data src/index.ts    
 POUR PARTIR LE PROJET
+
+
+Overview :
+Swagger : 

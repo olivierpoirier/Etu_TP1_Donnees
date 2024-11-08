@@ -56,8 +56,15 @@ app.get('/v1/', (req: Request, res: Response) => {
 });
 
 
+if(config.isProduction) {
+  // Démarrer le serveur
+  app.listen(port, () => {
+    console.log(`Serveur en écoute sur <http://localhost>:${port}`);
+  });
+} else {
+  https.createServer(options, app).listen(port, () => {
+    fetchProdData(config.pathDatabaseProducts);
+    console.log(`Server is running on port ${port}`);
+  });
+}
 
-https.createServer(options, app).listen(port, () => {
-  fetchProdData(config.pathDatabaseProducts);
-  console.log(`Server is running on port ${port}`);
-});

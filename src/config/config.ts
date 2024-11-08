@@ -11,6 +11,6 @@ export const config = {
   databaseFetchUrl: process.env.DATABASE_FETCH_URL || 'https://fakestoreapi.com/products',
   pathDatabaseProducts: process.env.PATH_DATABASE_PRODUCTS || './src/data/products.json',
   pathDatabaseUsers: process.env.PATH_DATABASE_USERS || './src/data/users.json',
-  nodeEnv: process.env.NODE_ENV || 'development',
+  nodeEnv: process.env.NODE_ENV || 'production',
   isProduction: process.env.NODE_ENV === 'production',
 };

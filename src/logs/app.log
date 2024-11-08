@@ -118,3 +118,108 @@
 {"level":"info","message":"GET /v1/api","timestamp":"2024-10-08T15:33:53.084Z"}
 {"level":"info","message":"GET /v1/products/100/10000/10/1000","timestamp":"2024-10-08T15:41:32.708Z"}
 {"level":"info","message":"GET /products/100/10000/10/1000","timestamp":"2024-10-08T15:41:32.712Z"}
+{"level":"info","message":"GET /v1/products","timestamp":"2024-10-08T16:13:04.287Z"}
+{"level":"info","message":"GET /products","timestamp":"2024-10-08T16:13:04.300Z"}
+{"level":"info","message":"GET /v1/products?minPrice=0&maxPrice=600","timestamp":"2024-10-08T17:59:27.324Z"}
+{"level":"info","message":"GET /products?minPrice=0&maxPrice=600","timestamp":"2024-10-08T17:59:27.334Z"}
+{"level":"info","message":"GET /v1/products?minPrice=0&maxPrice=-1","timestamp":"2024-10-08T17:59:55.201Z"}
+{"level":"info","message":"GET /products?minPrice=0&maxPrice=-1","timestamp":"2024-10-08T17:59:55.205Z"}
+{"level":"info","message":"GET /v1/products?minPrice=s&maxPrice=-1","timestamp":"2024-10-08T18:00:02.061Z"}
+{"level":"info","message":"GET /products?minPrice=s&maxPrice=-1","timestamp":"2024-10-08T18:00:02.063Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=1000","timestamp":"2024-10-08T18:00:19.888Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=1000","timestamp":"2024-10-08T18:00:19.892Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=1000","timestamp":"2024-10-08T18:00:23.303Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=1000","timestamp":"2024-10-08T18:00:23.306Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=s","timestamp":"2024-10-08T18:00:33.104Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=s","timestamp":"2024-10-08T18:00:33.106Z"}
+{"level":"info","message":"POST /products","timestamp":"2024-10-08T18:01:31.728Z"}
+{"level":"info","message":"POST /v1/products","timestamp":"2024-10-08T18:01:40.466Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:01:46.839Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-10-08T18:01:47.071Z"}
+{"level":"info","message":"POST /v1/products","timestamp":"2024-10-08T18:01:50.963Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-10-08T18:01:50.972Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-10-08T18:01:50.979Z"}
+{"level":"info","message":"PUT /v1/products/20","timestamp":"2024-10-08T18:02:19.643Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-10-08T18:02:19.652Z"}
+{"level":"info","message":"PUT /products/20","timestamp":"2024-10-08T18:02:19.716Z"}
+{"level":"info","message":"PUT /v1/products/20","timestamp":"2024-10-08T18:02:25.468Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-10-08T18:02:25.477Z"}
+{"level":"info","message":"PUT /products/20","timestamp":"2024-10-08T18:02:25.528Z"}
+{"level":"info","message":"PUT /v1/products/20","timestamp":"2024-10-08T18:02:29.347Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-10-08T18:02:29.359Z"}
+{"level":"info","message":"PUT /products/20","timestamp":"2024-10-08T18:02:29.433Z"}
+{"level":"info","message":"PUT /v1/products/20","timestamp":"2024-10-08T18:02:35.420Z"}
+{"level":"info","message":"PUT /v1/products/20","timestamp":"2024-10-08T18:02:40.396Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-10-08T18:02:40.404Z"}
+{"level":"info","message":"PUT /products/20","timestamp":"2024-10-08T18:02:40.448Z"}
+{"level":"info","message":"PUT /v1/products/s","timestamp":"2024-10-08T18:02:46.010Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/s","timestamp":"2024-10-08T18:02:46.019Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/s","timestamp":"2024-10-08T18:02:46.023Z"}
+{"level":"info","message":"DELETE /v1/products/s","timestamp":"2024-10-08T18:03:35.482Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/s","timestamp":"2024-10-08T18:03:35.494Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/s","timestamp":"2024-10-08T18:03:35.504Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:04:30.491Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-10-08T18:04:30.660Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:04:36.034Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:05:18.699Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-10-08T18:05:18.816Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:05:26.015Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:05:37.548Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-10-08T18:05:37.639Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:05:46.463Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:08:03.891Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-10-08T18:08:04.017Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:08:10.611Z"}
+{"level":"error","message":"STATUS 400 : POST /users/login","timestamp":"2024-10-08T18:08:10.613Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:08:55.712Z"}
+{"level":"error","message":"STATUS 400 : POST /users/login","timestamp":"2024-10-08T18:08:55.714Z"}
+{"level":"info","message":"POST /v1/users/signIn","timestamp":"2024-10-08T18:09:40.010Z"}
+{"level":"error","message":"STATUS 400 : POST /users/signIn","timestamp":"2024-10-08T18:09:40.014Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=0","timestamp":"2024-10-08T18:10:49.777Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=0","timestamp":"2024-10-08T18:10:49.790Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=0","timestamp":"2024-10-08T18:11:27.066Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=0","timestamp":"2024-10-08T18:11:27.074Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:11:42.893Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:11:42.897Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:13:19.988Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:13:19.999Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:14:38.080Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:14:43.656Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:14:45.814Z"}
+{"level":"info","message":"GET /v1/products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:15:02.977Z"}
+{"level":"info","message":"GET /products?minPrice=10000&maxPrice=100","timestamp":"2024-10-08T18:15:02.990Z"}
+{"level":"info","message":"GET /v1/users","timestamp":"2024-10-08T18:15:31.358Z"}
+{"level":"info","message":"GET /v1","timestamp":"2024-10-08T18:15:36.072Z"}
+{"level":"info","message":"GET /favicon.ico","timestamp":"2024-10-08T18:15:36.150Z"}
+{"level":"info","message":"GET /v1/products/100/10000/10/1000","timestamp":"2024-10-08T18:15:47.150Z"}
+{"level":"info","message":"GET /products/100/10000/10/1000","timestamp":"2024-10-08T18:15:47.155Z"}
+{"level":"info","message":"GET /v1/products?=10000&=100","timestamp":"2024-10-08T18:16:39.798Z"}
+{"level":"info","message":"GET /products?=10000&=100","timestamp":"2024-10-08T18:16:39.800Z"}
+{"level":"info","message":"GET /v1/products?=10000&=100","timestamp":"2024-10-08T18:16:42.146Z"}
+{"level":"info","message":"GET /products?=10000&=100","timestamp":"2024-10-08T18:16:42.153Z"}
+{"level":"info","message":"GET /v1/products/10000/100/200/100","timestamp":"2024-10-08T18:17:04.480Z"}
+{"level":"error","message":"STATUS 400 : GET /products/10000/100/200/100","timestamp":"2024-10-08T18:17:04.482Z"}
+{"level":"info","message":"GET /v1/products/10000/10000/200/100","timestamp":"2024-10-08T18:17:13.644Z"}
+{"level":"error","message":"STATUS 400 : GET /products/10000/10000/200/100","timestamp":"2024-10-08T18:17:13.646Z"}
+{"level":"info","message":"GET /v1/products/10000/100000/200/1000","timestamp":"2024-10-08T18:17:19.505Z"}
+{"level":"info","message":"GET /products/10000/100000/200/1000","timestamp":"2024-10-08T18:17:19.510Z"}
+{"level":"info","message":"GET /v1/products/10000/100000/200/s","timestamp":"2024-10-08T18:17:22.389Z"}
+{"level":"info","message":"GET /products/10000/100000/200/s","timestamp":"2024-10-08T18:17:22.392Z"}
+{"level":"info","message":"GET /v1/products/0/100000/200/s","timestamp":"2024-10-08T18:17:30.252Z"}
+{"level":"info","message":"GET /products/0/100000/200/s","timestamp":"2024-10-08T18:17:30.254Z"}
+{"level":"info","message":"GET /v1/products/0/100000/-1/s","timestamp":"2024-10-08T18:17:38.220Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/100000/-1/s","timestamp":"2024-10-08T18:17:38.224Z"}
+{"level":"info","message":"GET /v1/products/0/s/1/100000","timestamp":"2024-10-08T18:18:08.373Z"}
+{"level":"info","message":"GET /products/0/s/1/100000","timestamp":"2024-10-08T18:18:08.376Z"}
+{"level":"info","message":"GET /v1/products/0/s/1/100000","timestamp":"2024-10-08T18:19:28.864Z"}
+{"level":"info","message":"GET /products/0/s/1/100000","timestamp":"2024-10-08T18:19:28.876Z"}
+{"level":"info","message":"GET /v1/products/0/100/1/100000","timestamp":"2024-10-08T18:19:34.583Z"}
+{"level":"info","message":"GET /products/0/100/1/100000","timestamp":"2024-10-08T18:19:34.587Z"}
+{"level":"info","message":"GET /v1/products/0/100/1/100000","timestamp":"2024-10-08T18:19:50.680Z"}
+{"level":"info","message":"GET /products/0/100/1/100000","timestamp":"2024-10-08T18:19:50.685Z"}
+{"level":"info","message":"GET /v1/products/0/100/1/-1","timestamp":"2024-10-08T18:20:00.401Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/100/1/-1","timestamp":"2024-10-08T18:20:00.404Z"}
+{"level":"info","message":"GET /v1/products/200/100/1/-1","timestamp":"2024-10-08T18:20:07.368Z"}
+{"level":"error","message":"STATUS 400 : GET /products/200/100/1/-1","timestamp":"2024-10-08T18:20:07.372Z"}
+{"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:20:28.304Z"}
+{"level":"error","message":"STATUS 400 : POST /users/login","timestamp":"2024-10-08T18:20:28.339Z"}

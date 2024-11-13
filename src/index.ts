@@ -5,6 +5,7 @@ import { fetchProdData, getDataFromFile } from './data/apiDataPicker';
 import { config } from './config/config';
 import { errorMiddleWaresHandler } from './middlewares/error.middlewares';
 import { logger, loggerMiddleWare } from './logs/winston';
+import { connectToMongoDatabase, populateMongoDatabase } from './data/databaseMongo';
 //import './src/types/requestTypes.d.ts';
 
 
@@ -58,7 +59,9 @@ app.get('/', (req: Request, res: Response) => {
 
 if(config.nodeEnv === "prod") {
   // Démarrer le serveur prod
-  app.listen(port, () => {
+   app.listen(port, async () => {
+    await connectToMongoDatabase(config.DB_PROD_URI)
+    populateMongoDatabase()
     console.log("Serveur prod démarré");
     console.log(`Serveur en écoute sur <http://localhost>:${port}`);
   });

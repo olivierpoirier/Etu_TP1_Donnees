@@ -4,7 +4,7 @@ export class UserModel implements IUser {
   constructor(
     public id: number,
     public username: string,
-    public password: number,
+    public password: string,
     public email: string,
     public role: string
 

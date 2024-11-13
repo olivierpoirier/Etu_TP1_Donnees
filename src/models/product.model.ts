@@ -18,5 +18,5 @@ export class ProductModel implements IProduct {
     this.stock = stock;
   }
 
-
+  
 }

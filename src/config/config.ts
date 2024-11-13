@@ -11,6 +11,8 @@ export const config = {
   databaseFetchUrl: process.env.DATABASE_FETCH_URL || 'https://fakestoreapi.com/products',
   pathDatabaseProducts: process.env.PATH_DATABASE_PRODUCTS || './src/data/products.json',
   pathDatabaseUsers: process.env.PATH_DATABASE_USERS || './src/data/users.json',
-  nodeEnv: process.env.NODE_ENV || 'dev'
+  nodeEnv: process.env.NODE_ENV || 'dev',
+  DB_PROD_URI: process.env.DB_PROD_URI || "mongodb+srv://poirieroli:abc-123@clustertp2.abh3l.mongodb.net/Tp3_Prod",
+  DB_TEST_URI: process.env.DB_TEST_URI || "mongodb+srv://poirieroli:abc-123@clustertp2.abh3l.mongodb.net/Tp3_Test"
 
 };

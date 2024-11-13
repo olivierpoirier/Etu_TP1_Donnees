@@ -1,34 +1,34 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "username": "Muffin",
         "password": "$2a$10$SwUTgpvqHZZkWKlA7Q9VPeUQgSzi3F0I5BlimXXpFuXrqypluaIlO",
         "email": "muffin.muff@gmail.com",
         "role": "Employé"
     },
     {
-        "id": 3,
-        "username": "Muffin",
+        "id": 2,
+        "username": "Michel",
         "password": "$2a$10$mQkx0MJSaop/DqiknOtQG.ozgdtqOBmSxfMXUHXZnAr5FtJoA77Qq",
-        "email": "muffin.muff@gmail.com",
+        "email": "michel.mitch@gmail.com",
         "role": "Employé"
     },
     {
-        "id": 4,
+        "id": 3,
         "username": "Muffin",
         "password": "$2a$10$DAXzYBdoRKjDOymGEGDDtOMhc8c9fPEcO6f4ZMuJW7nXHTAnSyUum",
         "email": "muffin.muff@gmail.com",
         "role": "Gestionnaire"
     },
     {
-        "id": 5,
+        "id": 4,
         "username": "Muffin",
         "password": "$2a$10$4YPfk5gq5au5J8hj7wPQqOc4oC7nOA1vS5FXQC..X7m3TxH.jiuQ2",
         "email": "muffin.muff@gmail.com",
         "role": "Gestionnaire"
     },
     {
-        "id": 8,
+        "id": 5,
         "username": "paul",
         "password": "$2a$10$ENFXxdqBeHwEaH.nVieiS.bArtGONU7jGXO6vbYxSHnpk3iXgLo7y",
         "email": "chocococ@gmail.com",

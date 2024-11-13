@@ -9,7 +9,7 @@ import { logger } from '../logs/winston';
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
-const pathDataUser = config.pathDatabaseUsers;
+
 
 const regexEmail = new RegExp(/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/);
 
@@ -21,7 +21,7 @@ export class UserController {
         const password = req.body.password;
         if(email !== undefined && password != undefined) {
             if(regexEmail.test(email)) {
-                const userDataArray:IUser[] = Array.from(JSON.parse(getDataFromFile(pathDataUser)));
+                const userDataArray:IUser[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseUsers)));
                 const user = userDataArray.find(u => u.email === email);
                 
                 if (user) {
@@ -59,7 +59,7 @@ export class UserController {
         const password = req.body.password;
         const email = req.body.email;
         const role = req.body.role;
-        const userDataArray:IUser[] = Array.from(JSON.parse(getDataFromFile(pathDataUser)));
+        const userDataArray:IUser[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseUsers)));
         let id = userDataArray.length+1
         let hashPassword;
 

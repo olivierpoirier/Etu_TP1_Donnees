@@ -2,6 +2,7 @@ import { config } from '../config/config';
 import mongoose, { model, Schema } from "mongoose"
 import { IProduct } from '../interfaces/product.interface';
 import { IUser } from '../interfaces/user.interface';
+import { getDataFromFile } from './apiDataPicker';
 
 
 const regexName = new RegExp(/^[A-Za-z ]{3,50}$/);
@@ -9,10 +10,15 @@ const regexPrice = new RegExp(/^[1-9]\d*(\.\d+)?$/);
 const regexQuantity = new RegExp(/^[1-9]\d*$/);
 const regexEmail = new RegExp(/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/);
 
+//https://mongoosejs.com/docs/validation.html
 
 // Create a Schema corresponding to the Product interface.
 const productSchema = new Schema<IProduct>({
-    id: { type: Number, required: true },
+    id: { 
+        type: Number, 
+        required: true,
+        unique:true
+     },
     title: { type: String, 
         required: true, 
         validate: {
@@ -49,19 +55,21 @@ const productSchema = new Schema<IProduct>({
 const userSchema = new Schema<IUser>({
     id: { 
         type: Number, 
-        required: true 
+        required: true,
+        unique:true
     },
     username: { 
         type: String, 
         required: true 
     },
     password: { 
-        type: Number, 
+        type: String, 
         required: true 
     },
     email: { 
         type: String, 
         required:true,
+        unique:true,
         validate: {
             validator: (value: string) => regexEmail.test(value.toString()),
             message: 'The email needs to be an email.'
@@ -69,15 +77,19 @@ const userSchema = new Schema<IUser>({
     },
     role: { 
         type: String, 
-        required:true 
+        required:true,
+        enum: {
+            values: ['Gestionnaire', 'Employé'],
+            message: '{VALUE} is not supported'
+        }
     }
 });
 
 // Create a Product Model.
-const Product = model<IProduct>('Product', productSchema);
+export const MongoProduct = model<IProduct>('Product', productSchema);
 
 // Create a User Model.
-const User = model<IUser>('User', userSchema);
+export const MongoUser = model<IUser>('User', userSchema);
 
 export const connectToMongoDatabase = async (database:string) => {
 
@@ -88,3 +100,36 @@ export const connectToMongoDatabase = async (database:string) => {
         console.error("Cannot connect to Mongo DB : ", error)
     }
 }
+
+
+export function validateMongoProduct(product:IProduct) {
+    const prodInstance = new MongoProduct(product); //Create a product with the data 
+    const validationError = prodInstance.validateSync(); //Retrun null if the product is valid
+    return !validationError? true : false
+}
+
+export function validateMongoUser(user:IUser) {
+    const userInstance = new MongoUser(user); //Create a product with the data 
+    const validationError = userInstance.validateSync(); //Retrun null if the product is valid
+    return !validationError? true : false
+}
+
+export function populateMongoDatabase() {
+
+    MongoProduct.collection.drop()
+    MongoUser.collection.drop()
+
+    
+    const jsonProductArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
+    jsonProductArray.filter(product => {
+        if(validateMongoProduct(product)) new MongoProduct(product).save()
+    });
+    console.log("Mongo table products filled ")
+
+    const jsonUserArray: IUser[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseUsers)));
+    jsonUserArray.filter(user => {
+        if(validateMongoUser(user)) new MongoUser(user).save()
+    });
+    console.log("Mongo table users filled ")
+
+} 

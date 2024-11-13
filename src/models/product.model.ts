@@ -1,6 +1,6 @@
-import { Product } from '../interfaces/product.interface';
+import { IProduct } from '../interfaces/product.interface';
 
-export class ProductModel implements Product {
+export class ProductModel implements IProduct {
   constructor(
     public id: number,
     public title: string,

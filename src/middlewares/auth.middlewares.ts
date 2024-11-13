@@ -2,8 +2,6 @@ import { NextFunction } from "express";
 import { Request, Response } from 'express';
 import { config } from "../config/config";
 import { UserModel } from "../models/user.model";
-import { User } from "../interfaces/user.interface";
-import { getDataFromFile } from "../data/apiDataPicker";
 import { UserTokenModel } from "../models/userToken.model";
 import { logger } from "../logs/winston";
 

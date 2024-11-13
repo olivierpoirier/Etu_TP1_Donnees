@@ -1,5 +1,5 @@
 import { from } from "rxjs";
-import { Product } from "../interfaces/product.interface";
+import { IProduct } from "../interfaces/product.interface";
 import { ProductModel } from "../models/product.model";
 import { config } from "../config/config";
 
@@ -33,12 +33,12 @@ export function fetchProdData(pathProdData: string) {
   fetchData(config.databaseFetchUrl).subscribe({
     next(data) {
       if (data != null) {
-        const jsonArray: Product[] = Array.from(data);
-        const arrayProd: Product[] = [];
+        const jsonArray: IProduct[] = Array.from(data);
+        const arrayProd: IProduct[] = [];
         const minStock = 0;
         const maxStock = 300;
 
-        jsonArray.map((product: Product) => {
+        jsonArray.map((product: IProduct) => {
           const stock = Math.floor(Math.random() * (maxStock - minStock) + minStock);
           arrayProd.push(new ProductModel(product.id, product.title, product.price, product.description, product.category, stock))
         });

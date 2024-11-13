@@ -45,25 +45,27 @@ const options = {
 
 app.use(loggerMiddleWare);
 
-app.use('/v1/', productRoutes);
+app.use('/', productRoutes);
 
-app.use('/v1/', userRoutes);
+app.use('/', userRoutes);
 
 app.use(errorMiddleWaresHandler);
 
-app.get('/v1/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello TypeScript with Express!');
 });
 
 
-if(config.isProduction) {
-  // Démarrer le serveur
+if(config.nodeEnv === "prod") {
+  // Démarrer le serveur prod
   app.listen(port, () => {
+    console.log("Serveur prod démarré");
     console.log(`Serveur en écoute sur <http://localhost>:${port}`);
   });
 } else {
   https.createServer(options, app).listen(port, () => {
-    fetchProdData(config.pathDatabaseProducts);
+    //fetchProdData(config.pathDatabaseProducts);
+    console.log("Serveur test démarré");
     console.log(`Server is running on port ${port}`);
   });
 }

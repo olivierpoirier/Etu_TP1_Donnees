@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { ProductService } from '../services/product.service';
 import { ProductModel } from '../models/product.model';
-import { Product } from '../interfaces/product.interface';
+import { IProduct } from '../interfaces/product.interface';
 import { getDataFromFile } from '../data/apiDataPicker';
 import { config } from '../config/config';
 import { logger } from '../logs/winston';
@@ -61,7 +61,7 @@ export class ProductController {
       && regexQuantity.test(prodToAdd.stock)
     ) {
 
-      const jsonArray: Product[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
+      const jsonArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
       let id = jsonArray.length + 1
       //console.log(jsonArray.length)
       const newProd = new ProductModel(
@@ -92,7 +92,7 @@ export class ProductController {
 
 
     if (req.params.id !== undefined) {
-      const jsonArray: Product[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
+      const jsonArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
       const prodToModify = jsonArray.find(prod => prod.id === parseInt(req.params.id));
       //Permet de gérer les erreurs parce que certains éléments dans la 
       // base de données sont déjà trop gros
@@ -140,7 +140,7 @@ export class ProductController {
     console.log(req.params)
 
     if (req.params.id !== undefined) {
-      const jsonArray: Product[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
+      const jsonArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
       const prodToDelete = jsonArray.find(prod => prod.id === parseInt(req.params.id));
 
       if (prodToDelete !== undefined) {

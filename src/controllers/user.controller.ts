@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { getDataFromFile } from '../data/apiDataPicker';
-import { User } from '../interfaces/user.interface';
+import { IUser } from '../interfaces/user.interface';
 import { UserModel } from '../models/user.model';
 import { UserService } from '../services/user.service';
 import { config } from '../config/config';
@@ -21,7 +21,7 @@ export class UserController {
         const password = req.body.password;
         if(email !== undefined && password != undefined) {
             if(regexEmail.test(email)) {
-                const userDataArray:User[] = Array.from(JSON.parse(getDataFromFile(pathDataUser)));
+                const userDataArray:IUser[] = Array.from(JSON.parse(getDataFromFile(pathDataUser)));
                 const user = userDataArray.find(u => u.email === email);
                 
                 if (user) {
@@ -59,7 +59,7 @@ export class UserController {
         const password = req.body.password;
         const email = req.body.email;
         const role = req.body.role;
-        const userDataArray:User[] = Array.from(JSON.parse(getDataFromFile(pathDataUser)));
+        const userDataArray:IUser[] = Array.from(JSON.parse(getDataFromFile(pathDataUser)));
         let id = userDataArray.length+1
         let hashPassword;
 

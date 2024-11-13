@@ -1,6 +1,6 @@
-import { User } from '../interfaces/user.interface';
+import { IUser } from '../interfaces/user.interface';
 
-export class UserModel implements User {
+export class UserModel implements IUser {
   constructor(
     public id: number,
     public username: string,

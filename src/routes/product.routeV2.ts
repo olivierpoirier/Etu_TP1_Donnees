@@ -1,10 +1,10 @@
-import { Router } from 'express';
-import { ProductController } from '../controllers/product.controller';
-import { authenticateToken, authorizeRole } from '../middlewares/auth.middlewares';
 import express from 'express';
+import { Router } from 'express';
+import { authenticateToken, authorizeRole } from '../middlewares/auth.middlewares';
+import { MongoProductController } from '../controllers/product.controllerV2';
 
 const router = Router();
-const productController = new ProductController();
+const mongoProductController = new MongoProductController();
 
 router.use(express.json()); //Important sinon les jsons post ne marchent pas avec postman
 
@@ -100,7 +100,7 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
  *           description: Quantité en stock
  *           example: 42069
  */
-router.get('/v2/products/:minPrice?/:maxPrice?/:minStock?/:maxStock?', productController.getAllProducts);
+router.get('/v2/products/:minPrice?/:maxPrice?/:minStock?/:maxStock?', mongoProductController.getAllProducts);
 
 
 /**
@@ -124,7 +124,7 @@ router.get('/v2/products/:minPrice?/:maxPrice?/:minStock?/:maxStock?', productCo
  *       400:
  *         description: Requête incorrecte
  */
-router.post('/v2/products', authenticateToken, authorizeRole('Gestionnaire'), productController.createProduct);
+router.post('/v2/products', authenticateToken, authorizeRole('Gestionnaire'), mongoProductController.createProduct);
 
 
 /**
@@ -160,7 +160,7 @@ router.post('/v2/products', authenticateToken, authorizeRole('Gestionnaire'), pr
  *       404:
  *         description: Produit non trouvé.
  */
-router.put('/v2/products/:id', authenticateToken, authorizeRole('Gestionnaire'), productController.modifyProduct);
+router.put('/v2/products/:id', authenticateToken, authorizeRole('Gestionnaire'), mongoProductController.modifyProduct);
 
 /**
  * @swagger
@@ -185,5 +185,5 @@ router.put('/v2/products/:id', authenticateToken, authorizeRole('Gestionnaire'),
  *       400:
  *         description: Erreur dans la requête (ID manquant ou invalide).
  */
-router.delete('/v2/products/:id', authenticateToken, authorizeRole('Gestionnaire'), productController.deleteProduct);
+router.delete('/v2/products/:id', authenticateToken, authorizeRole('Gestionnaire'), mongoProductController.deleteProduct);
 export default router;

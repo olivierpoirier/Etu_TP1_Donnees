@@ -5,21 +5,13 @@ import { IProduct } from '../interfaces/product.interface';
 import { getDataFromFile } from '../data/apiDataPicker';
 import { config } from '../config/config';
 import { logger } from '../logs/winston';
+import { regexName, regexPrice, regexQuantity } from '../data/regex';
 
-
-
-const regexName = new RegExp(/^[A-Za-z ]{3,50}$/);
-const regexPrice = new RegExp(/^[1-9]\d*(\.\d+)?$/);
-const regexQuantity = new RegExp(/^[1-9]\d*$/);
 
 export class ProductController {
 
-
-
   public async getAllProducts(req: Request, res: Response): Promise<void> {
 
-
-    
     const minPrice = parseInt(req.params.minPrice) || 0;
     const maxPrice = parseInt(req.params.maxPrice) || 999999999999999;
     const minStock = parseInt(req.params.minStock) || 0;

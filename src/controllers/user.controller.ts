@@ -5,13 +5,13 @@ import { UserModel } from '../models/user.model';
 import { UserService } from '../services/user.service';
 import { config } from '../config/config';
 import { logger } from '../logs/winston';
+import { regexEmail } from '../data/regex';
 
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 
 
-const regexEmail = new RegExp(/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/);
 
 export class UserController {
 

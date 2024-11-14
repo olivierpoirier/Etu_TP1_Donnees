@@ -1,9 +1,6 @@
 import { MongoProduct } from '../data/databaseMongo';
 import { IProduct } from '../interfaces/product.interface';
 
-
-
-
 export class MongoProductService {
 
   public static async getAllProducts(minPrice: number = 0, maxPrice: number = 9999999999999999999999, minStock: number = 0, maxStock: number = 99999999999999999999999999) {

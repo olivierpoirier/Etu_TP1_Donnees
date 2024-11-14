@@ -11,7 +11,7 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
 
 /**
  * @swagger
- * /v1/users/login:
+ * /v2/users/login:
  *   post:
  *     tags:
  *       - Users
@@ -85,13 +85,13 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
  *           description: Role du travailleur. Soit "Employé" ou "Gestionnaire"
  *           example: "Employé"
  */
-router.post('/v1/users/login', userController.login);
+router.post('/v2/users/login', userController.login);
 
 
 
 /**
  * @swagger
- * /v1/users/signIn:
+ * /v2/users/signIn:
  *   post:
  *     tags:
  *       - Users
@@ -137,6 +137,6 @@ router.post('/v1/users/login', userController.login);
  *       400:
  *         description: Requête incorrecte (paramètres manquants ou regex email invalide).
  */
-router.post('/v1/users/signIn', userController.signIn);
+router.post('/v2/users/signIn', userController.signIn);
 
 export default router;

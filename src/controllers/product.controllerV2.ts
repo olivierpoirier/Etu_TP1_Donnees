@@ -38,7 +38,7 @@ export class MongoProductController {
   
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
-      console.error("STATUS 500: Error with getAllProductMongo", error)
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
       res.status(500).json(error);
     }
 
@@ -70,12 +70,14 @@ export class MongoProductController {
         res.status(400).send("Unexpected error");
         return;
       }
+
       logger.info(`STATUS 201: ${req.method} ${req.url}`);
       console.log("STATUS 201: NEW PRODUCT ADDED");
       res.status(201).json(prodToAdd);
+      
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
-      console.error("STATUS 500: Error with createProductMongo", error)
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
       res.status(500).json(error);
     }
 
@@ -122,12 +124,10 @@ export class MongoProductController {
 
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
-      console.error("STATUS 500: Error with modifyProductMongo", error)
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
       res.status(500).json(error);
     }
-    
-
-  
+      
   }
 
   public async deleteProduct(req: Request, res: Response): Promise<void> {
@@ -163,7 +163,7 @@ export class MongoProductController {
 
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
-      console.error("STATUS 500: Error with deleteProductMongo", error)
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
       res.status(500).json(error);
     }
 

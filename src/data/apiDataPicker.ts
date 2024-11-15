@@ -2,6 +2,7 @@ import { from } from "rxjs";
 import { IProduct } from "../interfaces/product.interface";
 import { ProductModel } from "../models/product.model";
 import { config } from "../config/config";
+import { IUser } from "../interfaces/user.interface";
 
 const fs = require('fs')
 
@@ -24,6 +25,16 @@ export function writeDataToFile(path: string, dataTorewrite: string) {
 
 }
 
+
+export function getProductsData():IProduct[]  {
+  const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
+  return productDataArray;
+}
+
+export function getUsersData():IUser[]  {
+  const userDataArray: IUser[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseUsers)));
+  return userDataArray;
+}
 
 
 

@@ -52,7 +52,7 @@ export class MongoUserController {
         } catch(error){
             logger.error(`STATUS 500: ${req.method} ${req.url}`);
             console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
-            res.status(500).json(error);
+            res.status(500).send("INTERNAL ERROR");
         }
 
         
@@ -84,14 +84,14 @@ export class MongoUserController {
     
             const response = await MongoUserService.createUser(newUser);
     
-            logger.info(`${req.method} ${req.url}`);
+            logger.info(`STATUS 201: ${req.method} ${req.url}`);
             console.log("STATUS 201: NEW USER ADDED");
             res.status(201).json(response);
 
         } catch(error){
             logger.error(`STATUS 500: ${req.method} ${req.url}`);
             console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
-            res.status(500).json(error);
+            res.status(500).send("INTERNAL ERROR");
         }
     
     };

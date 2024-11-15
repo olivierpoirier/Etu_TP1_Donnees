@@ -66,8 +66,8 @@ app.get('/', (req: Request, res: Response) => {
 if(config.nodeEnv === "prod") {
   // Démarrer le serveur prod
    app.listen(port, async () => {
-    await connectToMongoDatabase(config.DB_PROD_URI)
-    populateMongoDatabase()
+    //await connectToMongoDatabase(config.DB_PROD_URI)
+    //populateMongoDatabase()
     console.log("Serveur prod started");
     console.log(`Server is running on port http://localhost:${port}`);
   });

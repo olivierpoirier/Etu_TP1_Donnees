@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { ProductService } from '../services/product.service';
 import { ProductModel } from '../models/product.model';
 import { IProduct } from '../interfaces/product.interface';
-import { getDataFromFile } from '../data/apiDataPicker';
+import { getDataFromFile, getProductsData } from '../data/apiDataPicker';
 import { config } from '../config/config';
 import { logger } from '../logs/winston';
 import { regexName, regexPrice, regexQuantity } from '../data/regex';
@@ -10,71 +10,88 @@ import { regexName, regexPrice, regexQuantity } from '../data/regex';
 
 export class ProductController {
 
+
+
   public async getAllProducts(req: Request, res: Response): Promise<void> {
 
-    const minPrice = parseInt(req.params.minPrice) || 0;
-    const maxPrice = parseInt(req.params.maxPrice) || 999999999999999;
-    const minStock = parseInt(req.params.minStock) || 0;
-    const maxStock = parseInt(req.params.maxStock) || 999999999999999;
-
-    console.log(minPrice)
-    console.log(maxPrice)
-    if (
-      minPrice >= 0
-      && maxPrice >= 0
-      && minStock >= 0
-      && maxStock >= 0
-      && minPrice <= maxPrice
-      && minStock <= maxStock
-    ) {
+    try {
+      const minPrice = parseInt(req.params.minPrice) || 0;
+      const maxPrice = parseInt(req.params.maxPrice) || 999999999999999;
+      const minStock = parseInt(req.params.minStock) || 0;
+      const maxStock = parseInt(req.params.maxStock) || 999999999999999;
+  
+      if (
+        minPrice < 0
+        || maxPrice < 0
+        || minStock < 0
+        || maxStock < 0
+        || minPrice > maxPrice
+        || minStock > maxStock
+      ) {
+        logger.error(`STATUS 400 : ${req.method} ${req.url}`);
+        console.log("STATUS 400: GETALLPRODUCT DIDNT WORKED");
+        res.status(400).send("400 ERROR WITH YOUR REQUEST");
+        return;
+      }
+  
       const products = await ProductService.getAllProducts(minPrice, maxPrice, minStock, maxStock);
 
-      logger.info(`${req.method} ${req.url}`);
-      res.status(200).json(products);
+      logger.info(`STATUS 200: ${req.method} ${req.url}`);
       console.log("STATUS 200: GETALLPRODUCT WORKED");
-    } else {
+      res.status(200).json(products);
 
-      logger.error(`STATUS 400 : ${req.method} ${req.url}`);
-      res.status(400).send("400 Requête incorrecte");
-      console.log("STATUS 400: GETALLPRODUCT DIDNT WORKED");
+        
+    } catch(error){
+      logger.error(`STATUS 500: ${req.method} ${req.url}`);
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
+      res.status(500).send("INTERNAL ERROR");
     }
+
+    
   }
 
   public async createProduct(req: Request, res: Response): Promise<void> {
+    try {
 
-
-    const prodToAdd = req.body;
-    if (prodToAdd.title != undefined
-      && prodToAdd.description != undefined
-      && prodToAdd.price != undefined
-      && prodToAdd.stock != undefined
-      && regexName.test(prodToAdd.title)
-      && regexPrice.test(prodToAdd.price)
-      && regexQuantity.test(prodToAdd.stock)
-    ) {
-
-      const jsonArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
-      let id = jsonArray.length + 1
-      //console.log(jsonArray.length)
-      const newProd = new ProductModel(
-        id,
-        prodToAdd.title,
-        prodToAdd.price,
-        prodToAdd.description,
-        prodToAdd.category,
-        prodToAdd.stock
+      const productData:IProduct = new ProductModel(
+        -1, 
+        req.body.title || null, 
+        req.body.price || null, 
+        req.body.description || null, 
+        req.body.category || null, 
+        req.body.stock || null
       );
 
-      //console.log(newProd)
-      ProductService.createProduct(newProd);
+  
+      if (
+        !productData.title
+        || !productData.price
+        || !productData.stock
+        || !regexName.test(req.body.title.toString())
+        || !regexPrice.test(req.body.price.toString())
+        || !regexQuantity.test(req.body.stock.toString())
+      ) {
 
-      logger.info(`${req.method} ${req.url}`);
-      res.status(201).json(newProd);
+        logger.error(`STATUS 400 : ${req.method} ${req.url}`);
+        console.log("STATUS 400: NEW PRODUCT WASN'T ADDED");
+        res.status(400).send("ERROR WITH YOUR REQUEST");
+        return ;
+  
+      } 
+
+      const productDataArray = getProductsData()
+      productData.id = productDataArray.length + 1
+
+      ProductService.createProduct(productDataArray,productData);
+
+      logger.info(`STATUS 201: ${req.method} ${req.url}`);
       console.log("STATUS 201: NEW PRODUCT ADDED");
-    } else {
-      logger.error(`STATUS 400 : ${req.method} ${req.url}`);
-      res.status(400).send("Error with your request")
-      console.log("STATUS 400: NEW PRODUCT WASN'T ADDED");
+      res.status(201).json(productData);
+      
+    } catch(error){
+      logger.error(`STATUS 500: ${req.method} ${req.url}`);
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
+      res.status(500).send("INTERNAL ERROR");
     }
 
   }
@@ -83,74 +100,86 @@ export class ProductController {
   public async modifyProduct(req: Request, res: Response): Promise<void> {
 
 
-    if (req.params.id !== undefined) {
-      const jsonArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
-      const prodToModify = jsonArray.find(prod => prod.id === parseInt(req.params.id));
-      //Permet de gérer les erreurs parce que certains éléments dans la 
-      // base de données sont déjà trop gros
-      const titleBefore = prodToModify?.title
+    try {
 
+      const productData:IProduct = new ProductModel(
+        parseInt(req.params.id), 
+        req.body.title || null, 
+        req.body.price || null, 
+        req.body.description || null, 
+        req.body.category || null, 
+        req.body.stock || null
+      );
+      
+  
+      if (
+        !productData.title
+        || !productData.price
+        || !productData.stock
+        || !regexName.test(req.body.title.toString())
+        || !regexPrice.test(req.body.price.toString())
+        || !regexQuantity.test(req.body.stock.toString())
+      ) {
+  
+        logger.error(`STATUS 400 : ${req.method} ${req.url}`);
+        console.log("STATUS 400: NEW PRODUCT WASN'T MODIFIED");
+        res.status(400).send("ERROR WITH YOUR REQUEST");
+        return ;
+  
+      } 
+  
+      const productDataArray = getProductsData()
+      const prodToModify = productDataArray.find(prod => prod.id === parseInt(req.params.id));
 
-
-      if (prodToModify !== undefined) {
-
-
-        prodToModify.title = req.body.title || prodToModify.title
-        prodToModify.description = req.body.description || prodToModify.description
-        prodToModify.price = parseInt(req.body.price) || prodToModify.price
-        prodToModify.stock = parseInt(req.body.stock) || prodToModify.stock
-
-        if ((regexName.test(prodToModify.title) || prodToModify.title === titleBefore)
-          && regexPrice.test(prodToModify.price.toString())
-          && regexQuantity.test(prodToModify.stock.toString())) {
-
-
-          ProductService.modifyProduct(prodToModify);
-
-          logger.info(`${req.method} ${req.url}`);
-          res.status(200).json(prodToModify);
-          console.log(`STATUS 200: PRODUCT WITH ID ${prodToModify.id} MODIFIED`);
-        } else {
-          logger.error(`STATUS 400 : ${req.method} ${req.url}`);
-          res.status(400).send("Error with your request on regex")
-          console.log("STATUS 400: NEW PRODUCT WASN'T MODIFIED");
-        }
-      } else {
+      if (!prodToModify) {
+        
         logger.error(`STATUS 404 : ${req.method} ${req.url}`);
-        res.status(404).send("NOT FOUND")
         console.log("STATUS 404: PRODUCT NOT FOUND");
+        res.status(404).send("PRODUCT NOT FOUND");
+        return ;
       }
-    } else {
-      logger.error(`STATUS 400 : ${req.method} ${req.url}`);
-      res.status(400).send("Error with your request")
-      console.log("STATUS 400: NEW PRODUCT WASN'T MODIFIED");
+  
+      ProductService.modifyProduct(productDataArray, productData);
+  
+      logger.info(`STATUS 200: ${req.method} ${req.url}`);
+      console.log(`STATUS 200: PRODUCT WITH ID ${productData.id} MODIFIED`);
+      res.status(200).json(productData);
     }
+    catch(error){
+      logger.error(`STATUS 500: ${req.method} ${req.url}`);
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
+      res.status(500).send("INTERNAL ERROR");
+    }
+    
+      
+      
   }
 
   public async deleteProduct(req: Request, res: Response): Promise<void> {
 
-    console.log(req.params)
-
-    if (req.params.id !== undefined) {
-      const jsonArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
-      const prodToDelete = jsonArray.find(prod => prod.id === parseInt(req.params.id));
-
-      if (prodToDelete !== undefined) {
-
-        ProductService.deleteProduct(prodToDelete);
-
-        logger.info(`${req.method} ${req.url}`);
-        res.status(204).json(prodToDelete);
-        console.log(`STATUS 204: PRODUCT WITH ID ${prodToDelete.id} DELETED`);
-      } else {
+    try {
+      const productDataArray = getProductsData()
+      const prodToDelete = productDataArray.find(prod => prod.id === parseInt(req.params.id));
+  
+      
+      if (!prodToDelete) {
         logger.error(`STATUS 404 : ${req.method} ${req.url}`);
-        res.status(404).send("NOT FOUND")
         console.log("STATUS 404: PRODUCT NOT FOUND");
-      }
-    } else {
-      logger.error(`STATUS 400 : ${req.method} ${req.url}`);
-      res.status(400).send("Error with your request")
-      console.log("STATUS 400: NEW PRODUCT WASN'T ADDED");
+        res.status(404).send("PRODUCT NOT FOUND");
+        return; 
+  
+      } 
+      ProductService.deleteProduct(productDataArray, prodToDelete);
+  
+      logger.info(`STATUS 204 : ${req.method} ${req.url}`);
+      console.log(`STATUS 204: PRODUCT WITH ID ${prodToDelete.id} DELETED`);
+      res.status(204).json(prodToDelete);
+
+    } catch(error){
+      logger.error(`STATUS 500: ${req.method} ${req.url}`);
+      console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
+      res.status(500).send("INTERNAL ERROR");
     }
+
   }
 }

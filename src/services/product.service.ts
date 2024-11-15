@@ -3,13 +3,12 @@ import { getDataFromFile, writeDataToFile } from '../data/apiDataPicker';
 import { IProduct } from '../interfaces/product.interface';
 import { ProductModel } from '../models/product.model';
 
-const pathDataProd = config.pathDatabaseProducts;
 
 export class ProductService {
 
   public static async getAllProducts(minPrice: number = 0, maxPrice: number = 9999999999999999999999, minStock: number = 0, maxStock: number = 99999999999999999999999999): Promise<IProduct[]> {
 
-    const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
+    const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
     const arrayProd: IProduct[] | PromiseLike<IProduct[]> = [];
     productDataArray.map((product: IProduct) => {
 
@@ -28,28 +27,24 @@ export class ProductService {
   }
 
 
-  public static async createProduct(product: IProduct) {
-    const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
+  public static async createProduct(productDataArray:IProduct[], product: IProduct) {
     productDataArray.push(product);
-    let dataChanged = JSON.stringify(productDataArray, null, 4);
-    writeDataToFile(pathDataProd, dataChanged);
+    const dataChanged = JSON.stringify(productDataArray, null, 4);
+    writeDataToFile(config.pathDatabaseProducts, dataChanged);
     return dataChanged;
   }
 
-  public static async modifyProduct(prodToModify: IProduct) {
-    const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
-    let index = productDataArray.findIndex(prod => prod.id === prodToModify.id);
+  public static async modifyProduct(productDataArray:IProduct[], prodToModify: IProduct) {
+    const index = productDataArray.findIndex(prod => prod.id === prodToModify.id);
     productDataArray[index] = prodToModify;
-    writeDataToFile(pathDataProd, JSON.stringify(productDataArray, null, 4));
+    writeDataToFile(config.pathDatabaseProducts, JSON.stringify(productDataArray, null, 4));
     return productDataArray;
   }
 
-  public static async deleteProduct(prodToDelete: IProduct) {
-    const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(pathDataProd)));
-    let index = productDataArray.findIndex(prod => prod.id === prodToDelete.id);
-    console.log(index);
+  public static async deleteProduct(productDataArray:IProduct[], prodToDelete: IProduct) {
+    const index = productDataArray.findIndex(prod => prod.id === prodToDelete.id);
     productDataArray.splice(index, 1);
-    writeDataToFile(pathDataProd, JSON.stringify(productDataArray, null, 4));
+    writeDataToFile(config.pathDatabaseProducts, JSON.stringify(productDataArray, null, 4));
     return productDataArray;
   }
 }

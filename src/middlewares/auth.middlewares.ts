@@ -13,61 +13,83 @@ const jwt = require('jsonwebtoken');
 // Middleware de vérification du rôle
 export function authenticateToken(req: Request, res: Response, next: NextFunction): void {
 
-  //Inspiré de : https://medium.com/@christianinyekaka/building-a-rest-api-with-typescript-express-typeorm-authentication-authorization-and-postgres-e87d07d1af08
-  //Pas le choix d'utiliser ce boût de code. Il fait exactement ce qu'on a besoin
-  console.log(req.headers);
-  const header = req.headers['authorization']?.split(' ')[1];
-  console.log(header)
-  if (!header) {
-    console.log("UNAUTHORISED");
-    logger.error(`STATUS 401 : ${req.method} ${req.url}`);
-    res.status(401).json({ message: "Unauthorized" });
+  try{
+    const header = req.headers['authorization']?.split(' ')[1];
 
-  } else {
-    const token = header
-    if (!token) {
-      console.log("UNAUTHORISED");
+    if (!header) {
+      console.log("STATUS 401 : UNAUTHORISED");
       logger.error(`STATUS 401 : ${req.method} ${req.url}`);
       res.status(401).json({ message: "Unauthorized" });
-
-    } else {
-      jwt.verify(token, config.jwtSecret, (err: Error, user: UserModel) => {
-        if (err) return res.sendStatus(403);
+      return;
+  
+    } 
+    const token = header
+    if (!token) {
+      console.log("STATUS 401 : UNAUTHORISED");
+      logger.error(`STATUS 401 : ${req.method} ${req.url}`);
+      res.status(401).json({ message: "Unauthorized" });
+      return;
+  
+    } 
+    jwt.verify(token, config.jwtSecret, (err: Error) => {
+      if (err) {
+        console.log("STATUS 403 : FORBIDDEN");
         logger.error(`STATUS 403 : ${req.method} ${req.url}`);
-        next();
-      });
-    }
+        res.status(403).send("STATUS 403 : FORBIDDEN")
+        return;
+      }
+      next();
+    });
+  } catch(error){
+    logger.error(`STATUS 500: ${req.method} ${req.url}`);
+    console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
+    res.status(500).send("INTERNAL ERROR");
   }
-
 
 }
 
 export function authorizeRole(role: string) {
-  return (req: Request, res: Response, next: NextFunction) => {
+
+    return (req: Request, res: Response, next: NextFunction) => {
 
 
 
-    const token = req.headers['authorization']?.split(' ')[1];
-    jwt.verify(token, config.jwtSecret, (err: Error, userToken: UserTokenModel) => {
-      if (err) {
-
-
-        console.log(err)
+      const token = req.headers['authorization']?.split(' ')[1];
+      const decoded = jwt.verify(token, config.jwtSecret);
+  
+      console.log(decoded.userToLogin.role);
+  
+      if (role !== decoded.userToLogin.role) {
+        console.log("403");
         logger.warn(`STATUS 403 : ${req.method} ${req.url}`);
         res.status(403).json("STATUS 403: USER DON'T HAVE RIGHTS");
-      } else {
-
-        console.log(userToken.user.role)
-        console.log(role)
-        if (role !== userToken.user.role) {
-          console.log("403");
+      }
+  
+      next();
+      /*
+        if (err) {
+  
+  
+          console.log(err)
           logger.warn(`STATUS 403 : ${req.method} ${req.url}`);
           res.status(403).json("STATUS 403: USER DON'T HAVE RIGHTS");
         } else {
-          next();
+  
+          console.log("userToken: " + userToken.user);
+          console.log(userToken.user.role)
+          console.log(role)
+          if (role !== userToken.user.role) {
+            console.log("403");
+            logger.warn(`STATUS 403 : ${req.method} ${req.url}`);
+            res.status(403).json("STATUS 403: USER DON'T HAVE RIGHTS");
+          } else {
+            
+          }
         }
-      }
-    });
+      });
+      */
+  
+    };
+  
 
-  };
 }

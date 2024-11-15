@@ -40,7 +40,7 @@ export class MongoProductController {
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
       console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
-      res.status(500).json(error);
+      res.status(500).send("INTERNAL ERROR");
     }
 
   }
@@ -65,7 +65,7 @@ export class MongoProductController {
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
       console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
-      res.status(500).json(error);
+      res.status(500).send("INTERNAL ERROR");
     }
 
   }
@@ -101,7 +101,7 @@ export class MongoProductController {
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
       console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
-      res.status(500).send(error);
+      res.status(500).send("INTERNAL ERROR");
     }
       
   }
@@ -133,7 +133,7 @@ export class MongoProductController {
     } catch(error){
       logger.error(`STATUS 500: ${req.method} ${req.url}`);
       console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
-      res.status(500).json(error);
+      res.status(500).send("INTERNAL ERROR");
     }
   }
 }

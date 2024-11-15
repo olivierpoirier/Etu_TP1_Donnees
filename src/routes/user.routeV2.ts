@@ -85,7 +85,7 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
  *           description: Role du travailleur. Soit "Employé" ou "Gestionnaire"
  *           example: "Employé"
  */
-router.post('/v2/users/login', userController.login);
+router.post('/users/login', userController.login);
 
 
 
@@ -137,6 +137,6 @@ router.post('/v2/users/login', userController.login);
  *       400:
  *         description: Requête incorrecte (paramètres manquants ou regex email invalide).
  */
-router.post('/v2/users/signIn', userController.signIn);
+router.post('/users/signIn', userController.signIn);
 
 export default router;

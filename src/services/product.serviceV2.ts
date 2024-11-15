@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import { MongoProduct } from '../data/databaseMongo';
 import { IProduct } from '../interfaces/product.interface';
 
@@ -13,13 +14,13 @@ export class MongoProductService {
     return await new MongoProduct(product).save();
   }
 
-  public static async modifyProduct(prodToModify: IProduct) {
-    //https://mongoosejs.com/docs/api/model.html#Model.updateOne()
-    return await MongoProduct.updateOne({id:prodToModify.id}, prodToModify);
+  public static async modifyProduct(id: mongoose.Types.ObjectId, data:IProduct) {
+    //https://mongoosejs.com/docs/api/model.html#Model.findByIdAndUpdate()
+    return await MongoProduct.findByIdAndUpdate(id, data, { new:true });
   }
 
-  public static async deleteProduct(id: Number) {
-    //https://mongoosejs.com/docs/api/model.html#Model.deleteOne()
-    return await MongoProduct.deleteOne({id:id});
+  public static async deleteProduct(id: mongoose.Types.ObjectId) {
+    //https://mongoosejs.com/docs/api/model.html#Model.findByIdAndDelete()
+    return await MongoProduct.findByIdAndDelete(id);
   }
 }

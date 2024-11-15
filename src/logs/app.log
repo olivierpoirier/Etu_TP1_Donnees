@@ -223,3 +223,343 @@
 {"level":"error","message":"STATUS 400 : GET /products/200/100/1/-1","timestamp":"2024-10-08T18:20:07.372Z"}
 {"level":"info","message":"POST /v1/users/login","timestamp":"2024-10-08T18:20:28.304Z"}
 {"level":"error","message":"STATUS 400 : POST /users/login","timestamp":"2024-10-08T18:20:28.339Z"}
+{"level":"info","message":"GET /products/0/100","timestamp":"2024-11-15T01:07:15.862Z"}
+{"level":"info","message":"GET /v1/products/0/100","timestamp":"2024-11-15T01:07:22.524Z"}
+{"level":"info","message":"GET /products/0/100","timestamp":"2024-11-15T01:07:22.532Z"}
+{"level":"info","message":"GET /favicon.ico","timestamp":"2024-11-15T01:07:22.702Z"}
+{"level":"info","message":"GET /v2/products/0/100","timestamp":"2024-11-15T01:07:34.515Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/100","timestamp":"2024-11-15T01:07:34.517Z"}
+{"level":"info","message":"GET /v2/products/0/100","timestamp":"2024-11-15T01:08:56.005Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/100","timestamp":"2024-11-15T01:08:56.006Z"}
+{"level":"info","message":"GET /v2/products/0/100","timestamp":"2024-11-15T01:09:18.008Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/100","timestamp":"2024-11-15T01:09:18.036Z"}
+{"level":"info","message":"GET /v2/products/0/1000","timestamp":"2024-11-15T01:09:25.283Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000","timestamp":"2024-11-15T01:09:25.306Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1","timestamp":"2024-11-15T01:09:34.270Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/1","timestamp":"2024-11-15T01:09:34.294Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1/0","timestamp":"2024-11-15T01:09:39.031Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/1/0","timestamp":"2024-11-15T01:09:39.063Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1/1000","timestamp":"2024-11-15T01:09:48.636Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/1/1000","timestamp":"2024-11-15T01:09:48.656Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1/-1","timestamp":"2024-11-15T01:09:58.753Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/1000/1/-1","timestamp":"2024-11-15T01:09:58.754Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1/10000","timestamp":"2024-11-15T01:10:03.336Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/1/10000","timestamp":"2024-11-15T01:10:03.355Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1000/10000","timestamp":"2024-11-15T01:10:07.948Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/1000/10000","timestamp":"2024-11-15T01:10:07.965Z"}
+{"level":"info","message":"GET /v2/products/0/1000/10/10000","timestamp":"2024-11-15T01:10:11.517Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/10/10000","timestamp":"2024-11-15T01:10:11.537Z"}
+{"level":"info","message":"GET /v2/products/0/1000/30/10000","timestamp":"2024-11-15T01:10:19.604Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/30/10000","timestamp":"2024-11-15T01:10:19.623Z"}
+{"level":"info","message":"GET /v2/products/0/1000/30/200","timestamp":"2024-11-15T01:10:26.728Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/30/200","timestamp":"2024-11-15T01:10:26.748Z"}
+{"level":"info","message":"GET /v2/products/0/1000/30/200","timestamp":"2024-11-15T01:10:33.064Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/30/200","timestamp":"2024-11-15T01:10:33.082Z"}
+{"level":"info","message":"GET /v2/products/0/1000/30/20","timestamp":"2024-11-15T01:10:35.609Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/1000/30/20","timestamp":"2024-11-15T01:10:35.611Z"}
+{"level":"info","message":"GET /v2/products/0/1000/30/200","timestamp":"2024-11-15T01:10:38.792Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/30/200","timestamp":"2024-11-15T01:10:38.814Z"}
+{"level":"info","message":"GET /v2/products/20/1/30/200","timestamp":"2024-11-15T01:10:45.523Z"}
+{"level":"error","message":"STATUS 400 : GET /products/20/1/30/200","timestamp":"2024-11-15T01:10:45.524Z"}
+{"level":"info","message":"GET /v2/products/0/10/30/200","timestamp":"2024-11-15T01:10:56.532Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/10/30/200","timestamp":"2024-11-15T01:10:56.549Z"}
+{"level":"info","message":"GET /v2/products/0/9.99/30/200","timestamp":"2024-11-15T01:11:02.711Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/9.99/30/200","timestamp":"2024-11-15T01:11:02.729Z"}
+{"level":"info","message":"GET /v1/products/0/9.99/30/200","timestamp":"2024-11-15T01:11:19.816Z"}
+{"level":"info","message":"GET /products/0/9.99/30/200","timestamp":"2024-11-15T01:11:19.822Z"}
+{"level":"info","message":"GET /v1/products/0/7.95/30/200","timestamp":"2024-11-15T01:11:29.449Z"}
+{"level":"info","message":"GET /products/0/7.95/30/200","timestamp":"2024-11-15T01:11:29.453Z"}
+{"level":"info","message":"GET /v2/products/0/100/1/100000","timestamp":"2024-11-15T01:19:26.880Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/100/1/100000","timestamp":"2024-11-15T01:19:26.896Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:19:34.906Z"}
+{"level":"info","message":"POST /v2/users/login","timestamp":"2024-11-15T01:20:03.769Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-11-15T01:20:03.892Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:20:10.004Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:20:10.008Z"}
+{"level":"info","message":"STATUS 201: POST /products","timestamp":"2024-11-15T01:20:10.042Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:21:20.694Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:21:20.702Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-11-15T01:21:20.705Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:21:32.101Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:21:32.110Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-11-15T01:21:32.114Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:21:38.360Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:21:53.640Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:21:53.645Z"}
+{"level":"error","message":"STATUS 500: POST /products","timestamp":"2024-11-15T01:21:53.666Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:22:21.234Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:22:21.241Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-11-15T01:22:21.245Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:22:27.644Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:22:27.652Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-11-15T01:22:27.655Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:22:30.870Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:22:30.878Z"}
+{"level":"error","message":"STATUS 500: POST /products","timestamp":"2024-11-15T01:22:30.906Z"}
+{"level":"info","message":"PUT /v2/products/20","timestamp":"2024-11-15T01:29:00.288Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-11-15T01:29:00.320Z"}
+{"level":"error","message":"STATUS 500: PUT /products/20","timestamp":"2024-11-15T01:29:00.365Z"}
+{"level":"info","message":"PUT /v2/products/21","timestamp":"2024-11-15T01:29:42.661Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/21","timestamp":"2024-11-15T01:29:42.666Z"}
+{"level":"info","message":"STATUS 200: PUT /products/21","timestamp":"2024-11-15T01:29:42.707Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:30:19.121Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:30:19.125Z"}
+{"level":"info","message":"STATUS 200: PUT /products/23","timestamp":"2024-11-15T01:30:19.163Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:31:31.185Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:31:31.214Z"}
+{"level":"info","message":"STATUS 200: PUT /products/23","timestamp":"2024-11-15T01:31:31.267Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T01:31:59.570Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T01:31:59.583Z"}
+{"level":"info","message":"STATUS 201: POST /products","timestamp":"2024-11-15T01:31:59.611Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:32:02.527Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:32:02.538Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/23","timestamp":"2024-11-15T01:32:02.585Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:32:10.199Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:32:10.205Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/23","timestamp":"2024-11-15T01:32:10.249Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:32:11.639Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:32:11.649Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/23","timestamp":"2024-11-15T01:32:11.691Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:34:19.451Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:34:19.478Z"}
+{"level":"info","message":"STATUS 200: PUT /products/23","timestamp":"2024-11-15T01:34:19.542Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:34:57.776Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:34:57.802Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/23","timestamp":"2024-11-15T01:34:57.823Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:38:06.006Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:38:06.037Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/23","timestamp":"2024-11-15T01:38:06.040Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:38:10.271Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:38:10.281Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/22","timestamp":"2024-11-15T01:38:10.285Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:38:53.260Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:38:53.292Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/22","timestamp":"2024-11-15T01:38:53.319Z"}
+{"level":"info","message":"PUT /v2/products/23","timestamp":"2024-11-15T01:38:57.495Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/23","timestamp":"2024-11-15T01:38:57.504Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/23","timestamp":"2024-11-15T01:38:57.508Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:39:15.216Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:39:15.220Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/22","timestamp":"2024-11-15T01:39:15.245Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:39:19.636Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:39:19.639Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/22","timestamp":"2024-11-15T01:39:19.641Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:39:26.385Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:39:26.391Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/22","timestamp":"2024-11-15T01:39:26.394Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:39:29.577Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:39:29.582Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/22","timestamp":"2024-11-15T01:39:29.603Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:40:49.900Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:40:49.904Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/22","timestamp":"2024-11-15T01:40:49.922Z"}
+{"level":"info","message":"PUT /v2/products/22","timestamp":"2024-11-15T01:41:15.312Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/22","timestamp":"2024-11-15T01:41:15.337Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/22","timestamp":"2024-11-15T01:41:15.358Z"}
+{"level":"info","message":"PUT /v2/products/20","timestamp":"2024-11-15T01:41:21.083Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-11-15T01:41:21.090Z"}
+{"level":"error","message":"STATUS 500: PUT /products/20","timestamp":"2024-11-15T01:41:21.134Z"}
+{"level":"info","message":"PUT /v2/products/20","timestamp":"2024-11-15T01:42:00.077Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-11-15T01:42:00.082Z"}
+{"level":"error","message":"STATUS 500: PUT /products/20","timestamp":"2024-11-15T01:42:00.119Z"}
+{"level":"info","message":"PUT /v2/products/20","timestamp":"2024-11-15T01:42:25.718Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/20","timestamp":"2024-11-15T01:42:25.722Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/20","timestamp":"2024-11-15T01:42:25.724Z"}
+{"level":"info","message":"PUT /v2/products/21","timestamp":"2024-11-15T01:42:29.534Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/21","timestamp":"2024-11-15T01:42:29.539Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/21","timestamp":"2024-11-15T01:42:29.557Z"}
+{"level":"info","message":"PUT /v2/products/21","timestamp":"2024-11-15T01:55:29.331Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/21","timestamp":"2024-11-15T01:55:29.396Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/21","timestamp":"2024-11-15T01:55:29.438Z"}
+{"level":"info","message":"PUT /v2/products/21","timestamp":"2024-11-15T01:55:33.389Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/21","timestamp":"2024-11-15T01:55:33.399Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/21","timestamp":"2024-11-15T01:55:33.427Z"}
+{"level":"info","message":"PUT /v2/products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:55:45.724Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:55:45.733Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:55:45.770Z"}
+{"level":"info","message":"PUT /v2/products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:58:01.457Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:58:01.488Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:58:01.509Z"}
+{"level":"info","message":"PUT /v2/products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:58:47.615Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:58:47.641Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T01:58:47.662Z"}
+{"level":"info","message":"PUT /v2/products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:02:21.611Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:02:21.635Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:02:21.652Z"}
+{"level":"info","message":"PUT /v2/products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:04:57.141Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:04:57.172Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:04:57.190Z"}
+{"level":"info","message":"PUT /v2/products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:09:43.624Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:09:43.667Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736aa0562c19b3d5da899d9","timestamp":"2024-11-15T02:09:43.712Z"}
+{"level":"info","message":"PUT /v2/products/6736ad519d09916f31cde74a","timestamp":"2024-11-15T02:09:58.382Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736ad519d09916f31cde74a","timestamp":"2024-11-15T02:09:58.388Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736ad519d09916f31cde74a","timestamp":"2024-11-15T02:09:58.411Z"}
+{"level":"info","message":"PUT /v2/products/6736ad519d09916f31cde74a","timestamp":"2024-11-15T02:10:07.436Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736ad519d09916f31cde74a","timestamp":"2024-11-15T02:10:07.441Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736ad519d09916f31cde74a","timestamp":"2024-11-15T02:10:07.459Z"}
+{"level":"info","message":"PUT /v2/products/6736adee00352c1c6309535c","timestamp":"2024-11-15T02:12:17.007Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736adee00352c1c6309535c","timestamp":"2024-11-15T02:12:17.028Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736adee00352c1c6309535c","timestamp":"2024-11-15T02:12:17.036Z"}
+{"level":"info","message":"PUT /v2/products/6736adee00352c1c6309535c","timestamp":"2024-11-15T02:13:11.953Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736adee00352c1c6309535c","timestamp":"2024-11-15T02:13:11.984Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736adee00352c1c6309535c","timestamp":"2024-11-15T02:13:11.993Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:16:30.642Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:16:30.690Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:16:30.776Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:16:55.568Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:16:55.576Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:16:55.629Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:12.931Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:12.935Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:12.937Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:16.819Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:16.823Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:16.857Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:31.955Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:31.963Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:31.964Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:37.985Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:37.988Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736aeee7c0e08b20ffde423","timestamp":"2024-11-15T02:17:38.018Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde42","timestamp":"2024-11-15T02:17:40.221Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:18:16.409Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:18:16.438Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:18:16.461Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:18:19.390Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:18:19.400Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:18:19.404Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:19:35.758Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:19:35.787Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:19:35.792Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:20:25.668Z"}
+{"level":"info","message":"POST /v2/users/login","timestamp":"2024-11-15T02:20:31.869Z"}
+{"level":"info","message":"POST /users/login","timestamp":"2024-11-15T02:20:32.137Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:20:36.621Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:20:36.630Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:20:36.635Z"}
+{"level":"info","message":"PUT /v2/","timestamp":"2024-11-15T02:23:36.788Z"}
+{"level":"info","message":"PUT /v2/a","timestamp":"2024-11-15T02:23:40.544Z"}
+{"level":"info","message":"PUT /v2/products/","timestamp":"2024-11-15T02:23:49.624Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde4","timestamp":"2024-11-15T02:23:55.756Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde4","timestamp":"2024-11-15T02:23:55.792Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aeee7c0e08b20ffde4","timestamp":"2024-11-15T02:23:55.801Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:24:02.867Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:24:02.874Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736aeee7c0e08b20ffde4222","timestamp":"2024-11-15T02:24:02.878Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:24:05.386Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:24:05.394Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:24:05.426Z"}
+{"level":"info","message":"PUT /v2/products/","timestamp":"2024-11-15T02:24:51.771Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:25:07.820Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:25:07.824Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:25:07.840Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:36:54.151Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:36:54.155Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:36:54.171Z"}
+{"level":"info","message":"PUT /v2/products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:36:55.347Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:36:55.351Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736aeee7c0e08b20ffde422","timestamp":"2024-11-15T02:36:55.367Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:15.255Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:15.258Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:15.308Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:17.723Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:17.725Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:17.754Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:18.679Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:18.684Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:18.713Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:19.307Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:19.311Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:19.342Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:19.953Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:19.956Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:19.985Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:20.567Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:20.570Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:37:20.601Z"}
+{"level":"info","message":"PUT /v2/products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:38:06.864Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:38:06.885Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736b0a228d89472aeff6d64","timestamp":"2024-11-15T02:38:06.907Z"}
+{"level":"info","message":"PUT /v2/products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:38:35.485Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:38:35.489Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:38:35.534Z"}
+{"level":"info","message":"PUT /v2/products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:38:51.375Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:38:51.378Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:38:51.407Z"}
+{"level":"info","message":"PUT /v2/products/6736b40c435fb21e456d21c","timestamp":"2024-11-15T02:40:06.874Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b40c435fb21e456d21c","timestamp":"2024-11-15T02:40:06.877Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736b40c435fb21e456d21c","timestamp":"2024-11-15T02:40:06.879Z"}
+{"level":"info","message":"DELETE /v2/products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:43:03.336Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:43:03.340Z"}
+{"level":"error","message":"STATUS 200: DELETE /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:43:03.375Z"}
+{"level":"info","message":"DELETE /v2/products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:45:06.767Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:45:06.777Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b40c435fb21e456d21c4","timestamp":"2024-11-15T02:45:06.799Z"}
+{"level":"info","message":"DELETE /v2/products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:01.498Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:01.501Z"}
+{"level":"info","message":"STATUS 204: DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:01.538Z"}
+{"level":"info","message":"DELETE /v2/products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:02.767Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:02.770Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:02.785Z"}
+{"level":"info","message":"DELETE /v2/products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:04.592Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:04.596Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:04.611Z"}
+{"level":"info","message":"DELETE /v2/products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:48.173Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:48.175Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:46:48.190Z"}
+{"level":"info","message":"DELETE /v2/products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:48:19.917Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:48:19.928Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b5b076af28127fbdec10","timestamp":"2024-11-15T02:48:19.947Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3aa","timestamp":"2024-11-15T02:48:37.246Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b6716e8eb4c9228fe3aa","timestamp":"2024-11-15T02:48:37.252Z"}
+{"level":"info","message":"STATUS 204: DELETE /products/6736b6716e8eb4c9228fe3aa","timestamp":"2024-11-15T02:48:37.295Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3aa","timestamp":"2024-11-15T02:48:38.972Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b6716e8eb4c9228fe3aa","timestamp":"2024-11-15T02:48:38.980Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b6716e8eb4c9228fe3aa","timestamp":"2024-11-15T02:48:38.999Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T02:52:36.195Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T02:52:36.228Z"}
+{"level":"info","message":"STATUS 201: POST /products","timestamp":"2024-11-15T02:52:36.262Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T02:52:41.495Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T02:52:41.502Z"}
+{"level":"info","message":"STATUS 201: POST /products","timestamp":"2024-11-15T02:52:41.527Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T02:53:20.488Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T02:53:20.492Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-11-15T02:53:20.493Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T02:54:26.782Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T02:54:26.788Z"}
+{"level":"error","message":"STATUS 400 : POST /products","timestamp":"2024-11-15T02:54:26.791Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T02:54:34.967Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T02:54:34.972Z"}
+{"level":"info","message":"STATUS 201: POST /products","timestamp":"2024-11-15T02:54:34.995Z"}
+{"level":"info","message":"PUT /v2/products/6736b40c435fb21e456d21c","timestamp":"2024-11-15T02:54:57.016Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b40c435fb21e456d21c","timestamp":"2024-11-15T02:54:57.019Z"}
+{"level":"error","message":"STATUS 500: PUT /products/6736b40c435fb21e456d21c","timestamp":"2024-11-15T02:54:57.020Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T02:55:41.232Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T02:55:41.238Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T02:55:41.242Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:06.388Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:06.391Z"}
+{"level":"error","message":"STATUS 400 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:06.393Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:14.840Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:14.844Z"}
+{"level":"info","message":"STATUS 200: PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:14.895Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:23.535Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:23.542Z"}
+{"level":"info","message":"STATUS 204: DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:23.582Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:25.786Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:25.789Z"}
+{"level":"error","message":"STATUS 404 : DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:25.804Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:28.411Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:28.427Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:28.452Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-15T03:05:30.838Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-15T03:05:30.841Z"}
+{"level":"info","message":"STATUS 201: POST /products","timestamp":"2024-11-15T03:05:30.863Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:35.475Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:35.478Z"}
+{"level":"error","message":"STATUS 404 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-15T03:05:35.507Z"}
+{"level":"info","message":"GET /v2/products/0/100/1/100000","timestamp":"2024-11-15T03:05:38.501Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/100/1/100000","timestamp":"2024-11-15T03:05:38.517Z"}
+{"level":"info","message":"GET /v2/products/0/1000/1/100000","timestamp":"2024-11-15T03:05:48.150Z"}
+{"level":"info","message":"STATUS 200: GET /products/0/1000/1/100000","timestamp":"2024-11-15T03:05:48.165Z"}

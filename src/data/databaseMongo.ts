@@ -3,22 +3,14 @@ import mongoose, { model, Schema } from "mongoose"
 import { IProduct } from '../interfaces/product.interface';
 import { IUser } from '../interfaces/user.interface';
 import { getDataFromFile } from './apiDataPicker';
+import { regexEmail, regexName, regexPrice, regexQuantity } from './regex';
 
 
-const regexName = new RegExp(/^[A-Za-z ]{3,50}$/);
-const regexPrice = new RegExp(/^[1-9]\d*(\.\d+)?$/);
-const regexQuantity = new RegExp(/^[1-9]\d*$/);
-const regexEmail = new RegExp(/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/);
 
 //https://mongoosejs.com/docs/validation.html
 
 // Create a Schema corresponding to the Product interface.
 const productSchema = new Schema<IProduct>({
-    id: { 
-        type: Number, 
-        required: true,
-        unique:true
-     },
     title: { type: String, 
         required: true, 
         validate: {

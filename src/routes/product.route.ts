@@ -100,7 +100,7 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
  *           description: Quantité en stock
  *           example: 42069
  */
-router.get('/v1/products/:minPrice?/:maxPrice?/:minStock?/:maxStock?', productController.getAllProducts);
+router.get('/products/:minPrice?/:maxPrice?/:minStock?/:maxStock?', productController.getAllProducts);
 
 
 /**
@@ -124,7 +124,7 @@ router.get('/v1/products/:minPrice?/:maxPrice?/:minStock?/:maxStock?', productCo
  *       400:
  *         description: Requête incorrecte
  */
-router.post('/v1/products', authenticateToken, authorizeRole('Gestionnaire'), productController.createProduct);
+router.post('/products', authenticateToken, authorizeRole('Gestionnaire'), productController.createProduct);
 
 
 /**
@@ -160,7 +160,7 @@ router.post('/v1/products', authenticateToken, authorizeRole('Gestionnaire'), pr
  *       404:
  *         description: Produit non trouvé.
  */
-router.put('/v1/products/:id', authenticateToken, authorizeRole('Gestionnaire'), productController.modifyProduct);
+router.put('/products/:id', authenticateToken, authorizeRole('Gestionnaire'), productController.modifyProduct);
 
 /**
  * @swagger
@@ -185,5 +185,5 @@ router.put('/v1/products/:id', authenticateToken, authorizeRole('Gestionnaire'),
  *       400:
  *         description: Erreur dans la requête (ID manquant ou invalide).
  */
-router.delete('/v1/products/:id', authenticateToken, authorizeRole('Gestionnaire'), productController.deleteProduct);
+router.delete('/products/:id', authenticateToken, authorizeRole('Gestionnaire'), productController.deleteProduct);
 export default router;

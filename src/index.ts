@@ -1,6 +1,8 @@
 import express, { Request, Response } from 'express';
 import productRoutes from '../src/routes/product.route';
 import userRoutes from '../src/routes/user.route';
+import mongoProductRoutes from '../src/routes/product.routeV2';
+import mongoUserRoutes from '../src/routes/user.routeV2';
 import { fetchProdData, getDataFromFile } from './data/apiDataPicker';
 import { config } from './config/config';
 import { errorMiddleWaresHandler } from './middlewares/error.middlewares';
@@ -46,9 +48,13 @@ const options = {
 
 app.use(loggerMiddleWare);
 
-app.use('/', productRoutes);
+app.use('/v1/', productRoutes);
 
-app.use('/', userRoutes);
+app.use('/v1/', userRoutes);
+
+app.use('/v2/', mongoProductRoutes);
+
+app.use('/v2/', mongoUserRoutes);
 
 app.use(errorMiddleWaresHandler);
 

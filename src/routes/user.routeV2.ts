@@ -1,9 +1,10 @@
 import { Router } from 'express';
 import { UserController } from '../controllers/user.controller';
 import express from 'express';
+import { MongoUserController } from '../controllers/user.controllerV2';
 
 const router = Router();
-const userController = new UserController();
+const mongoUserController = new MongoUserController();
 
 
 
@@ -85,7 +86,7 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
  *           description: Role du travailleur. Soit "Employé" ou "Gestionnaire"
  *           example: "Employé"
  */
-router.post('/users/login', userController.login);
+router.post('/users/login', mongoUserController.login);
 
 
 
@@ -137,6 +138,6 @@ router.post('/users/login', userController.login);
  *       400:
  *         description: Requête incorrecte (paramètres manquants ou regex email invalide).
  */
-router.post('/users/signIn', userController.signIn);
+router.post('/users/signIn', mongoUserController.signIn);
 
 export default router;

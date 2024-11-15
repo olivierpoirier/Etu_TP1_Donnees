@@ -33,5 +33,96 @@
         "password": "$2a$10$ENFXxdqBeHwEaH.nVieiS.bArtGONU7jGXO6vbYxSHnpk3iXgLo7y",
         "email": "chocococ@gmail.com",
         "role": "Gestionnaire"
+    },
+    {
+        "id": 6,
+        "username": "Muffin",
+        "password": "$2a$10$PrsB7XA5CIaEMkOotZ6hjO8bNWJ31.1GqbDxnv.5PEAfYT9yG6Sl.",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 7,
+        "username": "Muffin",
+        "password": "$2a$10$CGLYTS0ONGExzjqW/hXC1uzk7n5QKBrcdUFVNbzitPbwFKcy6nBeS",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 8,
+        "username": "Muffin",
+        "password": "$2a$10$B6ZtQhv7aNXHZWeup7Hxvemzn027I6DrQUMUAuhs99sXPjLq8IoQm",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 9,
+        "username": "Muffin",
+        "password": "$2a$10$yAnBS0bEr1Ec2mY/q4AIc.fwjjeviCVq/qrWHWZcEeH3u7Ru1waV6",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 10,
+        "username": "Muffin",
+        "password": "$2a$10$tQ4qJBF0M0RMSe5CuXGpUuWUuV9e7K.BmmySoV8dOERcshbrIt4yq",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 11,
+        "username": "Muffin",
+        "password": "$2a$10$2BZVn6EN7Y7VkrjUIyQhOOuuVkTrkxad1vvPmDtxRfNTZTfC4ms3K",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 12,
+        "username": "Muffin",
+        "password": "$2a$10$iih2MYVKfw8jlYNdHfjJ/e.eoSr3M/FiHboGVhekp9LQsYzK.qw4m",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 13,
+        "username": "Muffin",
+        "password": "$2a$10$5WQCN7sfX7pSldPANkQu8eLy1JAXtEZy12VSzvazo1l.1zVCLUG4i",
+        "email": "muffin.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 14,
+        "username": "Muffin",
+        "password": "$2a$10$OtZi8ks5SH5HS1Wk075A7.OzylDqtr5/TF9bR5JVE29BuMTwmT1pO",
+        "email": "muffin.muffin@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 15,
+        "username": "Muffin",
+        "password": "$2a$10$ywCz7UmIYonB3M2D4mFVROWdRCIwwGLjD6OK4171ZtMKLsg6QjaFq",
+        "email": "muffin.muffin@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 16,
+        "username": "Muffin",
+        "password": "$2a$10$fofc4yNfi.UELkpCCm6LIes4lGJeYsUJbGcLpZJzvhNU/qL8GxtX.",
+        "email": "muffin.muffin@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 17,
+        "username": "Muffin",
+        "password": "$2a$10$WFHBZV2N0RpW/J5.uBIlP.PM/8f1e1nDsBH6JMtoX36UhwKQHT8pG",
+        "email": "muffin.muffin@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 18,
+        "username": "Muffin",
+        "password": "$2a$10$B.2XyKqvbe3NnWAysYauhu1FQgmETyNzGMtvem2/5NzbI7Z94q9le",
+        "email": "muffin.muffin@gmail.com",
+        "role": "Gestionnaire"
     }
 ]

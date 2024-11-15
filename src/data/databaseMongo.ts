@@ -45,11 +45,7 @@ const productSchema = new Schema<IProduct>({
 
 // Create a Schema corresponding to the User interface.
 const userSchema = new Schema<IUser>({
-    id: { 
-        type: Number, 
-        required: true,
-        unique:true
-    },
+
     username: { 
         type: String, 
         required: true 
@@ -91,6 +87,7 @@ export const connectToMongoDatabase = async (database:string) => {
     } catch(error) {
         console.error("Cannot connect to Mongo DB : ", error)
     }
+    
 }
 
 
@@ -123,5 +120,5 @@ export function populateMongoDatabase() {
         if(validateMongoUser(user)) new MongoUser(user).save()
     });
     console.log("Mongo table users filled ")
-
+    
 } 

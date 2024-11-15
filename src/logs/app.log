@@ -978,3 +978,7 @@
 {"level":"info","message":"PUT /v1/products/16","timestamp":"2024-11-15T16:52:55.279Z"}
 {"level":"error","message":"STATUS 403 : PUT /products/16","timestamp":"2024-11-15T16:52:55.284Z"}
 {"level":"info","message":"STATUS 200: PUT /products/16","timestamp":"2024-11-15T16:52:55.334Z"}
+{"level":"info","message":"POST /v1/users/signIn","timestamp":"2024-11-15T16:54:31.612Z"}
+{"level":"error","message":"STATUS 400 : POST /users/signIn","timestamp":"2024-11-15T16:54:31.682Z"}
+{"level":"info","message":"POST /v1/users/signIn","timestamp":"2024-11-15T16:54:43.997Z"}
+{"level":"info","message":"STATUS 201: POST /users/signIn","timestamp":"2024-11-15T16:54:44.128Z"}

@@ -107,10 +107,5 @@ export class UserController {
             console.error(`STATUS 500: Error with ${req.method} ${req.url}`, error)
             res.status(500).send("INTERNAL ERROR");
         }
-
-        
-       
-
-      
     };
 }

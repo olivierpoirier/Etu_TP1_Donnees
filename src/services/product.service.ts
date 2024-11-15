@@ -1,5 +1,5 @@
 import { config } from '../config/config';
-import { getDataFromFile, writeDataToFile } from '../data/apiDataPicker';
+import { getProductsData, writeDataToFile } from '../data/apiDataPicker';
 import { IProduct } from '../interfaces/product.interface';
 import { ProductModel } from '../models/product.model';
 
@@ -8,7 +8,7 @@ export class ProductService {
 
   public static async getAllProducts(minPrice: number = 0, maxPrice: number = 9999999999999999999999, minStock: number = 0, maxStock: number = 99999999999999999999999999): Promise<IProduct[]> {
 
-    const productDataArray: IProduct[] = Array.from(JSON.parse(getDataFromFile(config.pathDatabaseProducts)));
+    const productDataArray =  getProductsData();
     const arrayProd: IProduct[] | PromiseLike<IProduct[]> = [];
     productDataArray.map((product: IProduct) => {
 

@@ -180,5 +180,12 @@
         "password": "$2a$10$/3LSv0PfiKydb2bU/DiVp.Efx0fw3yEIlntkbgPIHlyvIk87zfzD.",
         "email": "o.muff@gmail.com",
         "role": "Gestionnaire"
+    },
+    {
+        "id": 27,
+        "username": "Muffin",
+        "password": "$2a$10$XVA4JdgbyrTanTWmO.jQhO/Xh5OfOioPejQLXJR9hdbAEuspxG8nq",
+        "email": "oa.muff@gmail.com",
+        "role": "Gestionnaire"
     }
 ]

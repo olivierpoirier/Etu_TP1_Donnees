@@ -66,14 +66,14 @@ app.get('/', (req: Request, res: Response) => {
 if(config.nodeEnv === "prod") {
   // Démarrer le serveur prod
    app.listen(port, async () => {
-    //await connectToMongoDatabase(config.DB_PROD_URI)
-    //populateMongoDatabase()
+    await connectToMongoDatabase(config.DB_PROD_URI)
+    populateMongoDatabase()
     console.log("Serveur prod started");
     console.log(`Server is running on port http://localhost:${port}`);
   });
 } else if (config.nodeEnv === "test"){
   https.createServer(options, app).listen(port, async () => {
-    //fetchProdData(config.pathDatabaseProducts);
+    fetchProdData(config.pathDatabaseProducts);
     await connectToMongoDatabase(config.DB_TEST_URI)
     populateMongoDatabase()
     console.log("Serveur test started");

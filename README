@@ -37,3 +37,6 @@ npx ts-node-dev --ignore-watch data src/index.ts
 POUR PARTIR LE PROJET
 
 
+npm install --save-dev jest
+npm i --save-dev @types/jest
+npm install --save-dev jest ts-jest @types/jest

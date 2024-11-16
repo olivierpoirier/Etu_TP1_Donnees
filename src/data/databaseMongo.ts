@@ -48,7 +48,7 @@ const userSchema = new Schema<IUser>({
 
     username: { 
         type: String, 
-        required: true 
+        required: true
     },
     password: { 
         type: String, 
@@ -98,8 +98,8 @@ export function validateMongoProduct(product:IProduct) {
 }
 
 export function validateMongoUser(user:IUser) {
-    const userInstance = new MongoUser(user); //Create a product with the data 
-    const validationError = userInstance.validateSync(); //Retrun null if the product is valid
+    const userInstance = new MongoUser(user); //Create a user with the data 
+    const validationError = userInstance.validateSync(); //Retrun null if the user is valid
     return !validationError? true : false
 }
 

@@ -18,8 +18,9 @@ export class MongoUserController {
 
             const email = req.body.email;
             const password = req.body.password;
+            const username = req.body.username;
 
-            if(!validateMongoUser(req.body)){
+            if(!validateMongoUser(req.body) || typeof password !== 'string' || typeof username !== 'string'){
                 logger.error(`STATUS 400 : ${req.method} ${req.url}`);
                 console.log("STATUS 400: USER CAN'T LOG");
                 res.status(400).send("STATUS 400 : ERROR WITH YOUR REQUEST");

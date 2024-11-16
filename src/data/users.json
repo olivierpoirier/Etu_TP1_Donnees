@@ -187,5 +187,19 @@
         "password": "$2a$10$XVA4JdgbyrTanTWmO.jQhO/Xh5OfOioPejQLXJR9hdbAEuspxG8nq",
         "email": "oa.muff@gmail.com",
         "role": "Gestionnaire"
+    },
+    {
+        "id": 28,
+        "username": "Muffin",
+        "password": "$2a$10$.SEySgsWhI25nsKX8IgpfOSGwwwYjIUNb6qvqj2RNI4aOQpz3OFJK",
+        "email": "aaaaaaaa.muff@gmail.com",
+        "role": "Gestionnaire"
+    },
+    {
+        "id": 29,
+        "username": "Muffin",
+        "password": "$2a$10$VdgTU3dKJdR/Ox8dyj.DXOT1H.g9HjwK8Fk5SSWO.L9sJy4TkmEuG",
+        "email": "hey.muff@gmail.com",
+        "role": "Gestionnaire"
     }
 ]

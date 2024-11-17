@@ -9593,3 +9593,306 @@
 {"level":"info","message":"GET /favicon.ico","timestamp":"2024-11-17T17:32:17.995Z"}
 {"level":"info","message":"POST /v2/users/login","timestamp":"2024-11-17T17:59:41.958Z"}
 {"level":"info","message":"STATUS 200: POST /users/login","timestamp":"2024-11-17T17:59:42.098Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:44:49.483Z"}
+{"level":"info","message":"STATUS 201: undefined undefined","timestamp":"2024-11-17T21:44:49.595Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.612Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.645Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.648Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.665Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.668Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.670Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.673Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.679Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.703Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:44:49.750Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:44:49.829Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.831Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.833Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.836Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.838Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.841Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.844Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.847Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.849Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:44:49.880Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:49.993Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.112Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.227Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.351Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.469Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.583Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.698Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.840Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:50.962Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.077Z"}
+{"level":"info","message":"STATUS 201: undefined undefined","timestamp":"2024-11-17T21:44:51.148Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.152Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.154Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.157Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.159Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.161Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.163Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.168Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.170Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.185Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.188Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.190Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.192Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.196Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:44:51.259Z"}
+{"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T21:44:51.277Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.279Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.281Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.283Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.285Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.290Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.292Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.294Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.296Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.298Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.300Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.302Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.305Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:44:51.308Z"}
+{"level":"info","message":"STATUS 204: undefined undefined","timestamp":"2024-11-17T21:44:51.370Z"}
+{"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T21:44:51.389Z"}
+{"level":"info","message":"GET /v2/products/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.585Z"}
+{"level":"error","message":"STATUS 400 : GET /products/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.600Z"}
+{"level":"info","message":"GET /v2/products/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.631Z"}
+{"level":"error","message":"STATUS 400 : GET /products/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.632Z"}
+{"level":"info","message":"GET /v2/products/0/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.647Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.649Z"}
+{"level":"info","message":"GET /v2/products/0/200/0/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.657Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/200/0/'%20OR%201=1%20--","timestamp":"2024-11-17T21:44:51.658Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:44:51.664Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:44:51.683Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:44:51.700Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:44:51.702Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:44:51.707Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:44:51.708Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:44:51.713Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:44:51.714Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:44:51.734Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:44:51.736Z"}
+{"level":"info","message":"PUT /v2/products/1%20UNION%20SELECT%20*%20FROM%20products","timestamp":"2024-11-17T21:44:51.745Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/1%20UNION%20SELECT%20*%20FROM%20products","timestamp":"2024-11-17T21:44:51.746Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.752Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.753Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.757Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.759Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.763Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.765Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.769Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.770Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.774Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.776Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.780Z"}
+{"level":"error","message":"STATUS 401 : DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:44:51.782Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-17T21:44:52.077Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-17T21:44:52.086Z"}
+{"level":"info","message":"PUT /v2/products/673a63d3826bcd7c7743a1f5","timestamp":"2024-11-17T21:44:52.121Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/673a63d3826bcd7c7743a1f5","timestamp":"2024-11-17T21:44:52.126Z"}
+{"level":"info","message":"DELETE /v2/products/673a63d3826bcd7c7743a1f5","timestamp":"2024-11-17T21:44:52.137Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/673a63d3826bcd7c7743a1f5","timestamp":"2024-11-17T21:44:52.143Z"}
+{"level":"info","message":"STATUS 201: undefined undefined","timestamp":"2024-11-17T21:45:52.019Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:45:52.025Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.036Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.066Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.069Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.087Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.089Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.093Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.095Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.101Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.119Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:45:52.190Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:45:52.248Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.250Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.253Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.256Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.259Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.262Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.264Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.266Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.269Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:45:52.331Z"}
+{"level":"info","message":"GET /v2/products/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.400Z"}
+{"level":"error","message":"STATUS 400 : GET /products/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.416Z"}
+{"level":"info","message":"GET /v2/products/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.446Z"}
+{"level":"error","message":"STATUS 400 : GET /products/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.447Z"}
+{"level":"info","message":"GET /v2/products/0/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.464Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.465Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.460Z"}
+{"level":"info","message":"GET /v2/products/0/200/0/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.473Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/200/0/'%20OR%201=1%20--","timestamp":"2024-11-17T21:45:52.474Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:45:52.480Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:45:52.501Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:45:52.518Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:45:52.520Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:45:52.536Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:45:52.538Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:45:52.543Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:45:52.545Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:45:52.549Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:45:52.551Z"}
+{"level":"info","message":"PUT /v2/products/1%20UNION%20SELECT%20*%20FROM%20products","timestamp":"2024-11-17T21:45:52.568Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/1%20UNION%20SELECT%20*%20FROM%20products","timestamp":"2024-11-17T21:45:52.571Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.575Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.576Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.577Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.581Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.582Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.587Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.588Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.597Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.598Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.603Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.605Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.609Z"}
+{"level":"error","message":"STATUS 401 : DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:45:52.611Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.684Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:52.828Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-17T21:45:52.845Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-17T21:45:52.850Z"}
+{"level":"info","message":"PUT /v2/products/673a6410494597b0d03e1b5d","timestamp":"2024-11-17T21:45:52.856Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/673a6410494597b0d03e1b5d","timestamp":"2024-11-17T21:45:52.861Z"}
+{"level":"info","message":"DELETE /v2/products/673a6410494597b0d03e1b5d","timestamp":"2024-11-17T21:45:52.872Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/673a6410494597b0d03e1b5d","timestamp":"2024-11-17T21:45:52.877Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:53.181Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:53.327Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:53.579Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:53.729Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:53.845Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:53.967Z"}
+{"level":"info","message":"STATUS 201: undefined undefined","timestamp":"2024-11-17T21:45:54.005Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.010Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.014Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.018Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.021Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.024Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.027Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.031Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.033Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.048Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.050Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.052Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.054Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.058Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:45:54.190Z"}
+{"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T21:45:54.212Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.215Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.219Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.223Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.225Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.236Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.239Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.241Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.242Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.245Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.247Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.249Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.251Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:45:54.255Z"}
+{"level":"info","message":"STATUS 204: undefined undefined","timestamp":"2024-11-17T21:45:54.322Z"}
+{"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T21:45:54.343Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:50:59.415Z"}
+{"level":"info","message":"STATUS 201: undefined undefined","timestamp":"2024-11-17T21:50:59.523Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.537Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.566Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.569Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.587Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.590Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.593Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.595Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.598Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.617Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:50:59.687Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:50:59.736Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.738Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.740Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.743Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.746Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.748Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.750Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.752Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:50:59.754Z"}
+{"level":"info","message":"GET /v2/products/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.773Z"}
+{"level":"error","message":"STATUS 400 : GET /products/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.793Z"}
+{"level":"info","message":"GET /v2/products/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.832Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:50:59.831Z"}
+{"level":"error","message":"STATUS 400 : GET /products/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.833Z"}
+{"level":"info","message":"GET /v2/products/0/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.847Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/200/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.849Z"}
+{"level":"info","message":"GET /v2/products/0/200/0/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.866Z"}
+{"level":"error","message":"STATUS 400 : GET /products/0/200/0/'%20OR%201=1%20--","timestamp":"2024-11-17T21:50:59.867Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:50:59.874Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:50:59.897Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:50:59.914Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:50:59.915Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:50:59.920Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:50:59.922Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:50:59.937Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:50:59.940Z"}
+{"level":"info","message":"POST /v2/products/","timestamp":"2024-11-17T21:50:59.945Z"}
+{"level":"error","message":"STATUS 401 : POST /products/","timestamp":"2024-11-17T21:50:59.947Z"}
+{"level":"info","message":"PUT /v2/products/1%20UNION%20SELECT%20*%20FROM%20products","timestamp":"2024-11-17T21:50:59.957Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/1%20UNION%20SELECT%20*%20FROM%20products","timestamp":"2024-11-17T21:50:59.959Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.963Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.965Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.969Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.970Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.974Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.976Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.982Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.983Z"}
+{"level":"info","message":"PUT /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.988Z"}
+{"level":"error","message":"STATUS 401 : PUT /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.989Z"}
+{"level":"info","message":"DELETE /v2/products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.993Z"}
+{"level":"error","message":"STATUS 401 : DELETE /products/6736b6716e8eb4c9228fe3b1","timestamp":"2024-11-17T21:50:59.995Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.016Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.139Z"}
+{"level":"info","message":"POST /v2/products","timestamp":"2024-11-17T21:51:00.286Z"}
+{"level":"error","message":"STATUS 403 : POST /products","timestamp":"2024-11-17T21:51:00.292Z"}
+{"level":"info","message":"PUT /v2/products/673a654423c4393859015de4","timestamp":"2024-11-17T21:51:00.299Z"}
+{"level":"error","message":"STATUS 403 : PUT /products/673a654423c4393859015de4","timestamp":"2024-11-17T21:51:00.303Z"}
+{"level":"info","message":"DELETE /v2/products/673a654423c4393859015de4","timestamp":"2024-11-17T21:51:00.314Z"}
+{"level":"error","message":"STATUS 403 : DELETE /products/673a654423c4393859015de4","timestamp":"2024-11-17T21:51:00.318Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.332Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.513Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.696Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.831Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:00.947Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.110Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.257Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.366Z"}
+{"level":"info","message":"STATUS 201: undefined undefined","timestamp":"2024-11-17T21:51:01.459Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.464Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.469Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.473Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.476Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.479Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.482Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.489Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.492Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.510Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.513Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.516Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.519Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.524Z"}
+{"level":"info","message":"STATUS 200: undefined undefined","timestamp":"2024-11-17T21:51:01.591Z"}
+{"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T21:51:01.614Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.616Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.619Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.621Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.623Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.629Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.631Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.633Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.636Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.639Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.641Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.644Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.647Z"}
+{"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T21:51:01.650Z"}
+{"level":"info","message":"STATUS 204: undefined undefined","timestamp":"2024-11-17T21:51:01.706Z"}
+{"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T21:51:01.726Z"}

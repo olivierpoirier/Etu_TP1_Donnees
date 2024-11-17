@@ -34,6 +34,9 @@ npm install express-session
 
 
 #Nouveau : 
+npm install ts-node --save-dev
+npm install ts-node-dev --save-dev
+
 npm install --save-dev jest
 npm i --save-dev @types/jest
 npm install --save-dev jest ts-jest @types/jest
@@ -46,3 +49,23 @@ npm install -g artillery
 npm install --save-dev artillery
 
 
+Pour faire les tests :
+Jest : npm test
+Artillery : npm run test:artillery
+
+La documentation des endpoints est comme toujours dans /api/ de l'application
+grâce au swagger
+ 
+
+Mesures mises en place pour répondres aux exigences du TP2:
+J'ai dû :
+    - Installer les nouvelles dépendances pour les librairies
+    - Changer le package.json pour modifier les commandes npm
+    - Réécrire presque tout mon code pour qu'il soit plus efficace, plus lisible et plus sécuritaire
+    - Ajouter une façon de changer l'environnement avec les commandes npm
+    - Créer un répertoire de test
+    - Écrire tout les différents types de tests pour le sql, fonctionnalité et tout.
+    - Créer des fichiers de config (artillery, pour gitHub action et d'autres)
+    - Connecter mon application à mon cluster mongoDB
+    - Comprendre comment toutes les librairies fonctionnent
+    - Modifier le swagger de la v1 pour le rendre compatible à la V2

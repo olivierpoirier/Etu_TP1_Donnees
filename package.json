@@ -10,7 +10,7 @@
     "start": "npm run set-env:prod ts-node src/index.ts",
     "test": "npm run set-env:test jest",
     "dev": "npm run set-env:dev ts-node-dev src/index.ts",
-    "test:artillery": "artillery run artillery-config.yml --output artillery-report.json"
+    "test:artillery": "npm run set-env:test artillery run artillery-config.yml --output artillery-report.json"
   },
   "keywords": [],
   "author": "",

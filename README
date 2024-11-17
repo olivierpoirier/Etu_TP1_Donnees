@@ -40,3 +40,6 @@ POUR PARTIR LE PROJET
 npm install --save-dev jest
 npm i --save-dev @types/jest
 npm install --save-dev jest ts-jest @types/jest
+npm install supertest --save-dev
+npm i --save-dev @types/supertest
+npm i --save-dev @types/jsonwebtoken

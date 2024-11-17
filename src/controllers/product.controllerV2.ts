@@ -13,11 +13,27 @@ export class MongoProductController {
   public async getAllProducts(req: Request, res: Response): Promise<void> {
 
     try {
+
+
+
+
+      
+      if(
+        !(req.params.minPrice === undefined || Number.isInteger(Number(req.params.minPrice)))
+        || !(req.params.maxPrice === undefined || Number.isInteger(Number(req.params.maxPrice)))
+        || !(req.params.minStock === undefined || Number.isInteger(Number(req.params.minStock)))
+        || !(req.params.maxStock === undefined || Number.isInteger(Number(req.params.maxStock)))){
+          logger.error(`STATUS 400 : ${req.method} ${req.url}`);
+          console.log("STATUS 400: GETALLPRODUCT DIDNT WORKED");
+          res.status(400).send("400 ERROR WITH YOUR REQUEST");
+          return;
+      }
+
       const minPrice = parseInt(req.params.minPrice) || 0;
       const maxPrice = parseInt(req.params.maxPrice) || 999999999999999;
       const minStock = parseInt(req.params.minStock) || 0;
       const maxStock = parseInt(req.params.maxStock) || 999999999999999;
-  
+      
       if (
         minPrice < 0
         || maxPrice < 0

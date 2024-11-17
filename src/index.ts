@@ -88,3 +88,4 @@ if(config.nodeEnv === "prod") {
   });
 }
 
+export default app;

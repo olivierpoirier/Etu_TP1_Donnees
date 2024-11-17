@@ -3,10 +3,9 @@ import {connectToMongoDatabase,  MongoProduct} from "../../src/data/databaseMong
 import {MongoProductController} from "../../src/controllers/product.controllerV2"
 import {config} from "../../src/config/config"
 import { Response, Request} from "express";
-import { before } from "node:test";
 import { ProductModel } from "../../src/models/product.model";
 
-
+//https://basarat.gitbook.io/typescript/intro-1/jest
 const mongoProductController = new MongoProductController();
 // Mock response and request objects
 const mockResponse = (): Partial<Response> => {
@@ -175,57 +174,43 @@ describe('Methods for controller product v2', () => {
             expect(res.send).toHaveBeenCalledWith(expect.any(String));
         });
 
-        test('Should work if the minPrice isnt a number', async () => {
+        test('Should return an error if the minPrice isnt a number', async () => {
             const req = mockRequest({minPrice:"s", maxPrice:20, minStock:20, maxStock:30},{}) as Request;
             const res = mockResponse() as Response;
 
             await mongoProductController.getAllProducts(req, res);
 
-            expect(res.status).toHaveBeenCalledWith(200);
-            expect(res.json).toHaveBeenCalledWith(expect.arrayContaining([]));
+            expect(res.status).toHaveBeenCalledWith(400);
+            expect(res.send).toHaveBeenCalledWith(expect.any(String));
         });
 
-        test('Should work if the maxPrice isnt a number', async () => {
+        test('Should return an error if the maxPrice isnt a number', async () => {
             const req = mockRequest({minPrice:10, maxPrice:"s", minStock:20, maxStock:30},{}) as Request;
             const res = mockResponse() as Response;
 
             await mongoProductController.getAllProducts(req, res);
 
-            expect(res.status).toHaveBeenCalledWith(200);
-            expect(res.json).toHaveBeenCalledWith(expect.arrayContaining([]));
+            expect(res.status).toHaveBeenCalledWith(400);
+            expect(res.send).toHaveBeenCalledWith(expect.any(String));
         });
 
-        test('Should work if the maxStock isnt a number', async () => {
+        test('Should return an error if the maxStock isnt a number', async () => {
             const req = mockRequest({minPrice:10, maxPrice:"s", minStock:20, maxStock:1000},{}) as Request;
             const res = mockResponse() as Response;
 
             await mongoProductController.getAllProducts(req, res);
 
-            expect(res.status).toHaveBeenCalledWith(200);
-            expect(res.json).toHaveBeenCalledWith(expect.arrayContaining([expect.objectContaining({
-                category: "jewelery",
-                description: "monProduit1",
-                price: 189.99,
-                stock: 50,
-                title: "monProduitb" 
-              })
-            ]));
+            expect(res.status).toHaveBeenCalledWith(400);
+            expect(res.send).toHaveBeenCalledWith(expect.any(String));
         });
-        test('Should work if the minStock isnt a number', async () => {
+        test('Should return an error if the minStock isnt a number', async () => {
             const req = mockRequest({minPrice:10, maxPrice:"s", minStock:20, maxStock:70},{}) as Request;
             const res = mockResponse() as Response;
 
             await mongoProductController.getAllProducts(req, res);
 
-            expect(res.status).toHaveBeenCalledWith(200);
-            expect(res.json).toHaveBeenCalledWith(expect.arrayContaining([expect.objectContaining({
-                category: "jewelery",
-                description: "monProduit1",
-                price: 189.99,
-                stock: 50,
-                title: "monProduitb" 
-              })
-            ]));
+            expect(res.status).toHaveBeenCalledWith(400);
+            expect(res.send).toHaveBeenCalledWith(expect.any(String));
         });
     });
 

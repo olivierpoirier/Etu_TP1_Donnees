@@ -36,7 +36,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // Servir la documentation Swagger via '/api-docs'
-app.use('/v1/api/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+app.use('/api/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
 const options = {

@@ -1,0 +1,54 @@
+config:
+  target: "http://localhost:3000/v2"
+  phases:
+    - name: "ARTILLERIES TESTS ARE COMING"  
+      duration: 60   
+      arrivalRate: 5  
+  variables:
+    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVG9Mb2dpbiI6eyJfaWQiOiI2NzNhMmYwOWQ2ZDQwYWZkMzAxOWFmZTUiLCJ1c2VybmFtZSI6InBhdWwiLCJwYXNzd29yZCI6IiQyYSQxMCRFTkZYeGRxQmVId0VhSC5uVmllaVMuYkFydEdPTlU3akdYTzZ2Yll4U0hucGszaVhnTG83eSIsImVtYWlsIjoiY2hvY29jb2NAZ21haWwuY29tIiwicm9sZSI6Ikdlc3Rpb25uYWlyZSIsIl9fdiI6MH0sImlhdCI6MTczMTg2NjM4MiwiZXhwIjoxNzMxODY5OTgyfQ.cJYRaRh1bOl2ohCjz_MOMd3W7oE4G1lpTiBe8U9ZCKw"
+  defaults:
+    headers:
+      Authorization: "Bearer {{ token }}"
+      Content-Type: "application/json"
+
+scenarios:
+  - name: Get Products with Filters
+    flow:
+      - get:
+          url: "/products/100/10000/10/1000"
+          expect:
+            statusCode: 200
+
+  - name: Create a New Product
+    flow:
+      - post:
+          url: "/products"
+          json:
+            title: "New Product"
+            description: "Product description"
+            price: 200
+            category: "Category"
+            stock: 50
+          expect:
+            statusCode: 201
+
+  - name: Update a Product
+    flow:
+      - put:
+          url: "/products/6736b6716e8eb4c9228fe3b1"
+          json:
+            title: "Updated Product"
+            description: "Updated description"
+            price: 300
+            category: "Updated Category"
+            stock: 75
+          expect:
+            statusCode: 200
+
+  - name: Delete a Product
+    flow:
+      - delete:
+          url: "/products/6736b6716e8eb4c9228fe3b1"
+          expect:
+            statusCode: 204
+

@@ -9589,3 +9589,7 @@
 {"level":"error","message":"STATUS 400 : undefined undefined","timestamp":"2024-11-17T17:24:36.340Z"}
 {"level":"info","message":"STATUS 204: undefined undefined","timestamp":"2024-11-17T17:24:36.396Z"}
 {"level":"error","message":"STATUS 404 : undefined undefined","timestamp":"2024-11-17T17:24:36.412Z"}
+{"level":"info","message":"GET /","timestamp":"2024-11-17T17:32:17.708Z"}
+{"level":"info","message":"GET /favicon.ico","timestamp":"2024-11-17T17:32:17.995Z"}
+{"level":"info","message":"POST /v2/users/login","timestamp":"2024-11-17T17:59:41.958Z"}
+{"level":"info","message":"STATUS 200: POST /users/login","timestamp":"2024-11-17T17:59:42.098Z"}

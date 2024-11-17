@@ -9,7 +9,8 @@
     "set-env:prod": "cross-env NODE_ENV=prod",
     "start": "npm run set-env:prod ts-node src/index.ts",
     "test": "npm run set-env:test jest",
-    "dev": "npm run set-env:dev ts-node-dev src/index.ts"
+    "dev": "npm run set-env:dev ts-node-dev src/index.ts",
+    "test:load": "artillery run artillery-config.yml --output artillery-report.json"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@types/supertest": "^6.0.2",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.6",
+    "artillery": "^2.0.21",
     "cross-env": "^7.0.3",
     "jest": "^29.7.0",
     "supertest": "^7.0.0",

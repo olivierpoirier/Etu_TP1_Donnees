@@ -76,9 +76,9 @@ router.use(express.json()); //Important sinon les jsons post ne marchent pas ave
  *       type: object
  *       properties:
  *         id:
- *           type: integer
+ *           type: string
  *           description: ID unique du produit
- *           example: 1
+ *           example: 6736b6716e8eb4c9228fe3b1
  *         title:
  *           type: string
  *           description: Nom du produit
@@ -138,9 +138,9 @@ router.post('/products', authenticateToken, authorizeRole('Gestionnaire'), mongo
  *       - name: id
  *         in: path
  *         required: true
- *         example: 1
+ *         example: 6736b6716e8eb4c9228fe3b1
  *         schema:
- *           type: integer
+ *           type: string
  *         description: ID du produit à modifier.
  *     requestBody:
  *       required: true
@@ -173,9 +173,9 @@ router.put('/products/:id', authenticateToken, authorizeRole('Gestionnaire'), mo
  *       - name: id
  *         in: path
  *         required: true
- *         example: 1
+ *         example: 6736b6716e8eb4c9228fe3b1
  *         schema:
- *           type: integer
+ *           type: string
  *         description: ID du produit à supprimer.
  *     responses:
  *       204:

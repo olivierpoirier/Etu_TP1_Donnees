@@ -32,14 +32,16 @@ npm install rxjs
 npm install dotenv
 npm install express-session
 
-UTILISER 
-npx ts-node-dev --ignore-watch data src/index.ts    
-POUR PARTIR LE PROJET
 
-
+#Nouveau : 
 npm install --save-dev jest
 npm i --save-dev @types/jest
 npm install --save-dev jest ts-jest @types/jest
 npm install supertest --save-dev
 npm i --save-dev @types/supertest
 npm i --save-dev @types/jsonwebtoken
+
+npm install -g artillery
+npm install --save-dev artillery
+
+
